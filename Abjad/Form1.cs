@@ -16,7 +16,7 @@ namespace Abjad
         {
             InitializeComponent();
 			String parham;
-
+			
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -26,7 +26,8 @@ namespace Abjad
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //change
+			//change
+			string amircreated;
         }
     }
 }
