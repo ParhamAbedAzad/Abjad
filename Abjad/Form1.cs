@@ -16,6 +16,7 @@ namespace Abjad
         {
             InitializeComponent();
 			String parham;
+            String parham_Created;
 			string amir_created;
         }
 
