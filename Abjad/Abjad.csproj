@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\Variant3.cs" />
+    <Compile Include="Code\Variant2.cs" />
+    <Compile Include="Code\Variant1.cs" />
+    <Compile Include="Code\Variant.cs" />
+    <Compile Include="Exception\InvalidInputException.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
