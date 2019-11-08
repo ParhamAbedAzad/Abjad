@@ -44,7 +44,7 @@
             this.richTextBox1.Size = new System.Drawing.Size(619, 195);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.richTextBox1.TextChanged += new System.EventHandler(this.RichTextBox1_TextChanged);
             // 
             // label1
             // 
@@ -56,7 +56,7 @@
             this.label1.Size = new System.Drawing.Size(77, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = ":متن ورودی";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // button1
             // 
@@ -81,7 +81,7 @@
             this.comboVariant.Size = new System.Drawing.Size(118, 21);
             this.comboVariant.TabIndex = 3;
             this.comboVariant.Text = "Choose Variant";
-            this.comboVariant.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboVariant.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // comboSize
             // 
@@ -94,7 +94,7 @@
             this.comboSize.Size = new System.Drawing.Size(118, 21);
             this.comboSize.TabIndex = 4;
             this.comboSize.Text = "Choose Size";
-            this.comboSize.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.comboSize.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
             // 
             // comboLang
             // 
