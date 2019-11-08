@@ -8,8 +8,9 @@ namespace Abjad.Code
 {
     class Variant1 : Variant
     {
-        public override void Fill()
+        public override void Fill(string input)
         {
+            //(amir): fill the Table with input!!!
             throw new NotSupportedException();
         }
     }

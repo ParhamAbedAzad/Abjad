@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Abjad.Code;
 
 namespace Abjad
 {
@@ -29,8 +30,26 @@ namespace Abjad
         {
             try
             {
+                Variant variant;
                 //insert code here!
                 checkInput();
+                switch (comboVariant.Text)
+                {
+                    case "Variant1":
+                        variant = new Variant1();
+                        break;
+                    case "Variant2":
+                        variant = new Variant1();
+                        break;
+                    case "Variant3":
+                        variant = new Variant1();
+                        break;
+                    default:
+                        throw new Exception();
+                }
+                variant.Fill(richTextBox1.Text);//(amir): add the func in variant1 then delete these comments
+                variant.Calculate();
+                //show variant in a table
             }
             catch(InvalidInputException e1)
             {
@@ -68,6 +87,11 @@ namespace Abjad
         private void checkInput()
         {
             //input should be checked here
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

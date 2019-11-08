@@ -31,9 +31,9 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboVariant = new System.Windows.Forms.ComboBox();
+            this.comboSize = new System.Windows.Forms.ComboBox();
+            this.comboLang = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -67,54 +67,55 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Do the math";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // comboBox1
+            // comboVariant
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboVariant.FormattingEnabled = true;
+            this.comboVariant.Items.AddRange(new object[] {
             "Variant1",
             "Variant2",
             "Variant3"});
-            this.comboBox1.Location = new System.Drawing.Point(12, 11);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(118, 21);
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.Text = "Choose Variant";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboVariant.Location = new System.Drawing.Point(12, 11);
+            this.comboVariant.Name = "comboVariant";
+            this.comboVariant.Size = new System.Drawing.Size(118, 21);
+            this.comboVariant.TabIndex = 3;
+            this.comboVariant.Text = "Choose Variant";
+            this.comboVariant.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // comboBox2
+            // comboSize
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboSize.FormattingEnabled = true;
+            this.comboSize.Items.AddRange(new object[] {
             "Big",
             "Small"});
-            this.comboBox2.Location = new System.Drawing.Point(12, 61);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(118, 21);
-            this.comboBox2.TabIndex = 4;
-            this.comboBox2.Text = "Choose Size";
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.comboSize.Location = new System.Drawing.Point(12, 61);
+            this.comboSize.Name = "comboSize";
+            this.comboSize.Size = new System.Drawing.Size(118, 21);
+            this.comboSize.TabIndex = 4;
+            this.comboSize.Text = "Choose Size";
+            this.comboSize.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // comboBox3
+            // comboLang
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.comboLang.FormattingEnabled = true;
+            this.comboLang.Items.AddRange(new object[] {
             "English",
             "Persian"});
-            this.comboBox3.Location = new System.Drawing.Point(12, 111);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(118, 21);
-            this.comboBox3.TabIndex = 5;
-            this.comboBox3.Text = "Choose Language";
+            this.comboLang.Location = new System.Drawing.Point(12, 111);
+            this.comboLang.Name = "comboLang";
+            this.comboLang.Size = new System.Drawing.Size(118, 21);
+            this.comboLang.TabIndex = 5;
+            this.comboLang.Text = "Choose Language";
             // 
             // Abjad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 467);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboLang);
+            this.Controls.Add(this.comboSize);
+            this.Controls.Add(this.comboVariant);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -131,9 +132,9 @@
 		private System.Windows.Forms.RichTextBox richTextBox1;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboVariant;
+        private System.Windows.Forms.ComboBox comboSize;
+        private System.Windows.Forms.ComboBox comboLang;
     }
 }
 

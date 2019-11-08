@@ -12,7 +12,7 @@ namespace Abjad.Code
         int[] scores = new int[4];
         char[,] reverseTable = new char[4, 500];
         int[] reverseScores = new int[4];
-        public virtual void Fill()
+        public virtual void Fill(string input)
         {
             throw new NotSupportedException();
         }
