@@ -16,8 +16,8 @@ namespace Abjad
         {
             InitializeComponent();
 			String parham;
-            String parham_Created;
 			string amir_created;
+            String parham_Created;
         }
 
         private void Form1_Load(object sender, EventArgs e)
