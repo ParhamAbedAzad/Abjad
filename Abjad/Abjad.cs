@@ -70,14 +70,18 @@ namespace Abjad
 
 		}
 
-        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboVariant_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
-        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboSize_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+        private void ComboLang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            richTextBox1.RightToLeft = (comboLang.Text == "English") ? RightToLeft.No : RightToLeft.Yes;
         }
 
         private void RichTextBox1_TextChanged(object sender, EventArgs e)

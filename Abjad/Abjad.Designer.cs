@@ -39,8 +39,9 @@
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(149, 10);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.richTextBox1.Size = new System.Drawing.Size(619, 195);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
@@ -61,7 +62,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(12, 161);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 44);
             this.button1.TabIndex = 2;
@@ -81,7 +82,7 @@
             this.comboVariant.Size = new System.Drawing.Size(118, 21);
             this.comboVariant.TabIndex = 3;
             this.comboVariant.Text = "Choose Variant";
-            this.comboVariant.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
+            this.comboVariant.SelectedIndexChanged += new System.EventHandler(this.ComboVariant_SelectedIndexChanged);
             // 
             // comboSize
             // 
@@ -94,7 +95,7 @@
             this.comboSize.Size = new System.Drawing.Size(118, 21);
             this.comboSize.TabIndex = 4;
             this.comboSize.Text = "Choose Size";
-            this.comboSize.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
+            this.comboSize.SelectedIndexChanged += new System.EventHandler(this.ComboSize_SelectedIndexChanged);
             // 
             // comboLang
             // 
@@ -107,6 +108,7 @@
             this.comboLang.Size = new System.Drawing.Size(118, 21);
             this.comboLang.TabIndex = 5;
             this.comboLang.Text = "Choose Language";
+            this.comboLang.SelectedIndexChanged += new System.EventHandler(this.ComboLang_SelectedIndexChanged);
             // 
             // Abjad
             // 
