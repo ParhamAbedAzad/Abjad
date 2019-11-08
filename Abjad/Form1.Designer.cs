@@ -44,6 +44,7 @@
             this.richTextBox1.Size = new System.Drawing.Size(619, 195);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // label1
             // 
@@ -59,10 +60,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(725, 209);
+            this.button1.Location = new System.Drawing.Point(12, 161);
             this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 44);
+            this.button1.Size = new System.Drawing.Size(118, 44);
             this.button1.TabIndex = 2;
             this.button1.Text = "Do the math";
             this.button1.UseVisualStyleBackColor = true;
@@ -74,7 +75,7 @@
             "Variant1",
             "Variant2",
             "Variant3"});
-            this.comboBox1.Location = new System.Drawing.Point(12, 12);
+            this.comboBox1.Location = new System.Drawing.Point(12, 11);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(118, 21);
             this.comboBox1.TabIndex = 3;
@@ -87,7 +88,7 @@
             this.comboBox2.Items.AddRange(new object[] {
             "Big",
             "Small"});
-            this.comboBox2.Location = new System.Drawing.Point(12, 64);
+            this.comboBox2.Location = new System.Drawing.Point(12, 61);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(118, 21);
             this.comboBox2.TabIndex = 4;
@@ -100,7 +101,7 @@
             this.comboBox3.Items.AddRange(new object[] {
             "English",
             "Persian"});
-            this.comboBox3.Location = new System.Drawing.Point(12, 116);
+            this.comboBox3.Location = new System.Drawing.Point(12, 111);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(118, 21);
             this.comboBox3.TabIndex = 5;
