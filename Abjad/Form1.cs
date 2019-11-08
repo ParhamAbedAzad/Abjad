@@ -15,7 +15,7 @@ namespace Abjad
         public Abjad()
         {
             InitializeComponent();
-			String a = "AMIR";
+			String parham;
 
         }
 
