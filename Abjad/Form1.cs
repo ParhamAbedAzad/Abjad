@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Abjad
 {
-    public partial class Form1 : Form
+    public partial class Abjad : Form
     {
-        public Form1()
+        public Abjad()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
