@@ -31,7 +31,5 @@ namespace Abjad.Code
 			this.ReSmallValues = reSmallValues;
 			this.ReBigValues = reBigValues;
 		}
-
-
 	}
 }

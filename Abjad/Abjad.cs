@@ -16,9 +16,7 @@ namespace Abjad
         public Abjad()
         {
             InitializeComponent();
-			String parham;
-			string amir_created;
-            String parham_Created;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -109,7 +107,25 @@ namespace Abjad
 			String input = richTextBox1.Text.Replace(" ", "");
 			return input;
         }
+		
+		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
 
-       
-    }
+		}
+
+		private void tabPage1_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+		{
+			
+		}
+	}
 }
