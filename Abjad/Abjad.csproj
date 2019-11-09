@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\Rows.cs" />
+    <Compile Include="Code\Table.cs" />
     <Compile Include="Code\Variant3.cs" />
     <Compile Include="Code\Variant2.cs" />
     <Compile Include="Code\Variant1.cs" />

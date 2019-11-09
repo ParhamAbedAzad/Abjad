@@ -10,7 +10,7 @@ namespace Abjad.Code
     {
         public override void Fill(string input)
         {
-            throw new NotSupportedException();
+            throw new NotImplementedException();
         }
     }
 }
