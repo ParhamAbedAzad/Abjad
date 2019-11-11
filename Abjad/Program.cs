@@ -16,7 +16,7 @@ namespace Abjad
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Abjad());
+            Application.Run(new AbjadMainForm());
         }
     }
 }

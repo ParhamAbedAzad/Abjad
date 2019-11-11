@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Abjad.Code
 {
-	class Table
-	{
-		private Dictionary<char, Rows> map = new Dictionary<char, Rows>();
+    class Table
+    {
+        private Dictionary<char, Rows> map = new Dictionary<char, Rows>();
 		public Dictionary<char, Rows> Map { get => map; set => map = value; }
 		public Table()
 		{
