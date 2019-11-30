@@ -49,14 +49,22 @@ namespace Abjad
 					default:
 						throw new Exception("no variant selected");
 				}
-				variant.Fill(input);
+
+				DataTable dtb1;
+
+
+				dtb1 = variant.Fill(input);
 				string outp = "line1:" + variant.Scores[0].ToString() + "\nline2:" + 
 					variant.Scores[1].ToString() + "\nline3:" + 
 					variant.Scores[2].ToString() + "\nline4:" + 
 					variant.Scores[3].ToString() ;
+
 				MessageBox.Show(outp);
 				//variant.Calculate();
-				//show variant in a table	
+				//show variant in a table
+				
+
+				
 			}
 			catch (InvalidInputException e1)
 			{

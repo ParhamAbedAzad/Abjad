@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +25,7 @@ namespace Abjad.Code
 
 		//(parham) use properties baka xD
 
-		public virtual void Fill(string input)
+		public virtual DataTable Fill(string input)
         {
             throw new NotSupportedException();
         }

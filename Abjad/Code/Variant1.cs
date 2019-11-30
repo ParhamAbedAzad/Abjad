@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,8 +9,28 @@ namespace Abjad.Code
 {
     class Variant1 : Variant
     {
-        public override void Fill(string input)
+        public override DataTable Fill(string input)
         {
+			DataTable dtb1 = new DataTable("mapTable");
+			DataColumn column;
+			DataRow row;
+
+			column = new DataColumn();
+			column.ColumnName = "1";
+			dtb1.Columns.Add(column);
+
+			column = new DataColumn();
+			column.ColumnName = "2";
+			dtb1.Columns.Add(column);
+
+			column = new DataColumn();
+			column.ColumnName = "3";
+			dtb1.Columns.Add(column);
+
+			column = new DataColumn();
+			column.ColumnName = "4";
+			dtb1.Columns.Add(column);
+			
 			if (input.Length > MAX_INPUT_SIZE)
 				throw new InvalidInputException("bigger than "+ MAX_INPUT_SIZE +" chars");
 			
@@ -18,7 +39,10 @@ namespace Abjad.Code
 			int cn = 0;//char iteration 0 max 2000
 
 			Console.WriteLine(input);
-			while(i<500)
+
+
+			
+			while (i<500)
 			{
 				if(cn >= input.Length )
 					break;
@@ -27,6 +51,11 @@ namespace Abjad.Code
 				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
 				Scores[j] += MapTable.Map[input[cn]].SmallValues;
 				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
+
+				row = dtb1.NewRow();
+				row["1"] = input[cn]+ ", " + MapTable.Map[input[cn]].SmallValues.ToString() ;
+				dtb1.Rows.Add(row);
+
 				++cn;
 				if (cn >= input.Length )
 					break;
@@ -36,6 +65,11 @@ namespace Abjad.Code
 				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
 				Scores[j] += MapTable.Map[input[cn]].SmallValues;
 				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
+
+				row = dtb1.NewRow();
+				row["2"] = input[cn].ToString() + ", " + MapTable.Map[input[cn]].SmallValues.ToString();
+				dtb1.Rows.Add(row);
+
 				++cn;
 				if (cn >= input.Length )
 					break;
@@ -45,6 +79,10 @@ namespace Abjad.Code
 				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
 				Scores[j] += MapTable.Map[input[cn]].SmallValues;
 				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
+
+				row = dtb1.NewRow();
+				row["3"] = input[cn].ToString() + ", " + MapTable.Map[input[cn]].SmallValues.ToString();
+				dtb1.Rows.Add(row);
 				++cn;
 				if (cn >= input.Length )
 					break;
@@ -54,6 +92,10 @@ namespace Abjad.Code
 				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
 				Scores[j] += MapTable.Map[input[cn]].SmallValues;
 				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
+
+				row = dtb1.NewRow();
+				row["4"] = input[cn].ToString() + ", " + MapTable.Map[input[cn]].SmallValues.ToString();
+				dtb1.Rows.Add(row);
 				++cn;
 				if (cn >= input.Length )
 					break;
@@ -63,6 +105,10 @@ namespace Abjad.Code
 				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
 				Scores[j] += MapTable.Map[input[cn]].SmallValues;
 				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
+
+				row = dtb1.NewRow();
+				row["4"] = input[cn].ToString() + ", " + MapTable.Map[input[cn]].SmallValues.ToString();
+				dtb1.Rows.Add(row);
 				++cn;
 				if (cn >= input.Length )
 					break;
@@ -72,6 +118,10 @@ namespace Abjad.Code
 				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
 				Scores[j] += MapTable.Map[input[cn]].SmallValues;
 				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
+
+				row = dtb1.NewRow();
+				row["3"] = input[cn].ToString() + ", " + MapTable.Map[input[cn]].SmallValues.ToString();
+				dtb1.Rows.Add(row);
 				++cn;
 				if (cn >= input.Length )
 					break;
@@ -81,6 +131,10 @@ namespace Abjad.Code
 				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
 				Scores[j] += MapTable.Map[input[cn]].SmallValues;
 				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
+
+				row = dtb1.NewRow();
+				row["2"] = input[cn].ToString() + ", " + MapTable.Map[input[cn]].SmallValues.ToString();
+				dtb1.Rows.Add(row);
 				++cn;
 				if (cn >= input.Length )
 					break;
@@ -90,12 +144,18 @@ namespace Abjad.Code
 				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
 				Scores[j] += MapTable.Map[input[cn]].SmallValues;
 				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
+
+				row = dtb1.NewRow();
+				row["1"] = input[cn].ToString() + ", " + MapTable.Map[input[cn]].SmallValues.ToString();
+				dtb1.Rows.Add(row);
 				++cn;
 				Console.WriteLine(j + " " + i);
 				if (cn >= input.Length )
 					break;
 				++i;
 			}
+
+			return dtb1;
 			
         }
     }
