@@ -11,9 +11,9 @@ using Abjad.Code;
 
 namespace Abjad
 {
-    public partial class Abjad : Form
+    public partial class AbjadMainForm : Form
     {
-        public Abjad()
+        public AbjadMainForm()
         {
             InitializeComponent();
 
@@ -82,7 +82,7 @@ namespace Abjad
 				if (e3.Message == null)
 					MessageBox.Show(e3.StackTrace,"oops! something went wrong",MessageBoxButtons.OK,MessageBoxIcon.Error);
 				else
-					MessageBox.Show(e3.StackTrace,"Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show(e3.Message,"Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
 
@@ -108,6 +108,7 @@ namespace Abjad
 
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
         {
+            // Trace: button1.Location = AddPoints(richTextBox1.GetPositionFromCharIndex(richTextBox1.SelectionStart),richTextBox1.Location) - button1.Size;
             
         }
         private String checkAndTrimInput()
@@ -135,5 +136,9 @@ namespace Abjad
 		{
 			
 		}
+        private Point AddPoints(Point A , Point B)
+        {
+            return new Point(A.X + B.X, A.Y + B.Y);
+        }
 	}
 }
