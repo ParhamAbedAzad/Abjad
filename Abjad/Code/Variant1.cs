@@ -9,154 +9,65 @@ namespace Abjad.Code
 {
     class Variant1 : Variant
     {
+        public Variant1() : base()
+        {
+            InitialDataTable = CreateTable();
+            MidDataTable = CreateTable();
+        }
         public override DataTable Fill(string input)
         {
-			DataTable dtb1 = new DataTable("mapTable");
-			DataColumn column;
-			DataRow row;
-
-			column = new DataColumn();
-			column.ColumnName = "1";
-			dtb1.Columns.Add(column);
-
-			column = new DataColumn();
-			column.ColumnName = "2";
-			dtb1.Columns.Add(column);
-
-			column = new DataColumn();
-			column.ColumnName = "3";
-			dtb1.Columns.Add(column);
-
-			column = new DataColumn();
-			column.ColumnName = "4";
-			dtb1.Columns.Add(column);
-			
-			if (input.Length > MAX_INPUT_SIZE)
-				throw new InvalidInputException("bigger than "+ MAX_INPUT_SIZE +" chars");
-			
-			int i = 0; //from 0 to 499
+            char currentChar;
+            if (input.Length > MAX_INPUT_SIZE)
+            {
+                throw new InvalidInputException("bigger than " + MAX_INPUT_SIZE + " chars");
+            }
+            int incValue = 1;
+            int i = 0;
 			int j = 0; //from 0 to 3
-			int cn = 0;//char iteration 0 max 2000
-
+            int length = input.Length;
 			Console.WriteLine(input);
 
-
-			
-			while (i<500)
+            for(int cn = 0; cn < length; cn++)
 			{
-				if(cn >= input.Length )
-					break;
-				Console.WriteLine(j + " " + i);
-				Table[j, i] = input[cn];
-				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
-				Scores[j] += MapTable.Map[input[cn]].SmallValues;
-				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
-
-				row = dtb1.NewRow();
-				row["1"] = input[cn]+ ", " + MapTable.Map[input[cn]].SmallValues.ToString() ;
-				dtb1.Rows.Add(row);
-
-				++cn;
-				if (cn >= input.Length )
-					break;
-				++j;
-				Console.WriteLine(j + " " + i);
-				Table[j, i] = input[cn];
-				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
-				Scores[j] += MapTable.Map[input[cn]].SmallValues;
-				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
-
-				row = dtb1.NewRow();
-				row["2"] = input[cn].ToString() + ", " + MapTable.Map[input[cn]].SmallValues.ToString();
-				dtb1.Rows.Add(row);
-
-				++cn;
-				if (cn >= input.Length )
-					break;
-				++j;
-				Console.WriteLine(j + " " + i);
-				Table[j, i] = input[cn];
-				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
-				Scores[j] += MapTable.Map[input[cn]].SmallValues;
-				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
-
-				row = dtb1.NewRow();
-				row["3"] = input[cn].ToString() + ", " + MapTable.Map[input[cn]].SmallValues.ToString();
-				dtb1.Rows.Add(row);
-				++cn;
-				if (cn >= input.Length )
-					break;
-				++j;
-				Console.WriteLine(j + " " + i);
-				Table[j, i] = input[cn];
-				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
-				Scores[j] += MapTable.Map[input[cn]].SmallValues;
-				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
-
-				row = dtb1.NewRow();
-				row["4"] = input[cn].ToString() + ", " + MapTable.Map[input[cn]].SmallValues.ToString();
-				dtb1.Rows.Add(row);
-				++cn;
-				if (cn >= input.Length )
-					break;
-				++i;//BEWARE
-				Console.WriteLine(j+ " " + i);
-				Table[j, i] = input[cn];
-				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
-				Scores[j] += MapTable.Map[input[cn]].SmallValues;
-				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
-
-				row = dtb1.NewRow();
-				row["4"] = input[cn].ToString() + ", " + MapTable.Map[input[cn]].SmallValues.ToString();
-				dtb1.Rows.Add(row);
-				++cn;
-				if (cn >= input.Length )
-					break;
-				--j;
-				Console.WriteLine(j + " " + i);
-				Table[j, i] = input[cn];
-				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
-				Scores[j] += MapTable.Map[input[cn]].SmallValues;
-				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
-
-				row = dtb1.NewRow();
-				row["3"] = input[cn].ToString() + ", " + MapTable.Map[input[cn]].SmallValues.ToString();
-				dtb1.Rows.Add(row);
-				++cn;
-				if (cn >= input.Length )
-					break;
-				--j;
-				Console.WriteLine(j + " " + i);
-				Table[j, i] = input[cn];
-				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
-				Scores[j] += MapTable.Map[input[cn]].SmallValues;
-				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
-
-				row = dtb1.NewRow();
-				row["2"] = input[cn].ToString() + ", " + MapTable.Map[input[cn]].SmallValues.ToString();
-				dtb1.Rows.Add(row);
-				++cn;
-				if (cn >= input.Length )
-					break;
-				--j;
-				Console.WriteLine(j + " " + i);
-				Table[j, i] = input[cn];
-				ReverseTable[j, i] = MapTable.Map[input[cn]].ReCharacter;
-				Scores[j] += MapTable.Map[input[cn]].SmallValues;
-				ReverseScores[j] += MapTable.Map[input[cn]].ReSmallValues;
-
-				row = dtb1.NewRow();
-				row["1"] = input[cn].ToString() + ", " + MapTable.Map[input[cn]].SmallValues.ToString();
-				dtb1.Rows.Add(row);
-				++cn;
-				Console.WriteLine(j + " " + i);
-				if (cn >= input.Length )
-					break;
-				++i;
+                currentChar = input[cn];
+                AddToTables(i, j, currentChar);
+                if ((j == 3 && incValue == 1) || (j == 0 && incValue == -1))
+                {
+                    incValue = -incValue;
+                    i++;
+                }
+                else
+                {
+                    j += incValue;
+                }
 			}
 
-			return dtb1;
+			return InitialDataTable;
 			
+        }
+        private DataTable CreateTable()
+        {
+            DataColumn column;
+            DataTable result = new DataTable("mapTable");
+            for (int i = 1; i < 5; i++)
+            {
+                column = new DataColumn();
+                column.ColumnName = i.ToString();
+                result.Columns.Add(column);
+            }
+            return result;
+        }
+        private void AddToTables(int i, int j,char currentChar)
+        {
+            Table[j, i] = currentChar;
+            ReverseTable[j, i] = MapTable.Map[currentChar].ReCharacter;
+            Scores[j] += MapTable.Map[currentChar].SmallValues;
+            ReverseScores[j] += MapTable.Map[currentChar].ReSmallValues;
+            
+            
+            DataRow row = InitialDataTable.NewRow();
+            row[(j+1).ToString()] = currentChar + ", " + MapTable.Map[currentChar].SmallValues.ToString();
+            InitialDataTable.Rows.Add(row);
         }
     }
 }

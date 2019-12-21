@@ -8,8 +8,7 @@ namespace Abjad.Code
 {
     class Table
     {
-        private Dictionary<char, Rows> map = new Dictionary<char, Rows>();
-		public Dictionary<char, Rows> Map { get => map; set => map = value; }
+		public Dictionary<char, Rows> Map { get; set; }
 		public Table()
 		{
 			Map.Add('ا' , new Rows('ا',1,1,'ج',3,3));

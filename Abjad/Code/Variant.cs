@@ -10,28 +10,29 @@ namespace Abjad.Code
     class Variant
     {
 		public const int MAX_INPUT_SIZE = 2000;
-		private char[,] table = new char[4, 500];
-		private int[] scores = new int[4];
-		private char[,] reverseTable = new char[4, 500];
-		private int[] reverseScores = new int[4];
+		private Table mapTable;
 
-		private Table mapTable = new Table();
+		public char[,] MidTable { get; set; } = new char[4, MAX_INPUT_SIZE/2];
+		public char[,] Table { get; set; } = new char[4, MAX_INPUT_SIZE/2];
 
-		public char[,] Table { get => table; set => table = value; }
-		public int[] Scores { get => scores; set => scores = value; }
-		public char[,] ReverseTable { get => reverseTable; set => reverseTable = value; }
-		public int[] ReverseScores { get => reverseScores; set => reverseScores = value; }
-		internal Table MapTable { get => mapTable; set => mapTable = value; }
-
-		//(parham) use properties baka xD
-
+        public int[] Scores { get; set; } = new int[4];
+		public char[,] MidNazirTable { get; set; } = new char[4, MAX_INPUT_SIZE/2];
+		public char[,] NazirTable { get; set; } = new char[4, MAX_INPUT_SIZE/2];
+		public int[] NazirScores { get; set; } = new int[4];
+        public char[,] MidReverseTable { get; set; } = new char[4, MAX_INPUT_SIZE / 2];
+        public char[,] ReverseTable { get; set; } = new char[4, MAX_INPUT_SIZE / 2];
+        public int[] ReverseScores { get; set; } = new int[4];
+        internal Table MapTable { get; set; } = new Table();
+        public DataTable MidDataTable { get; set; }
+        public DataTable InitialDataTable { get; set; }
+        
 		public virtual DataTable Fill(string input)
         {
             throw new NotSupportedException();
         }
-        public void Calculate()
+        public virtual void Calculate()
         {
-            throw new NotImplementedException();
+            throw new NotSupportedException();
         }
     }
 }
