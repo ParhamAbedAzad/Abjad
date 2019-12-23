@@ -11,10 +11,8 @@ namespace Abjad.Code
     {
         public Variant1() : base()
         {
-            InitialDataTable = CreateTable();
-            MidDataTable = CreateTable();
         }
-        public override DataTable Fill(string input)
+        public void Fill(string input)
         {
             char currentChar;
             if (input.Length > MAX_INPUT_SIZE)
@@ -33,7 +31,7 @@ namespace Abjad.Code
                 AddToTables(i, j, currentChar);
                 if ((j == 3 && incValue == 1) || (j == 0 && incValue == -1))
                 {
-                    incValue = -incValue;
+                    incValue = -1*incValue;
                     i++;
                 }
                 else
@@ -47,8 +45,45 @@ namespace Abjad.Code
             MidTable[2] = Table[1];
             MidTable[3] = Table[2];
             Array.Reverse(MidTable[3]);
-			return InitialDataTable;
-			
+            FillScoreTables(length);
+        }
+        
+        private void AddToTables(int i, int j,char currentChar)
+        {
+            Table[j][ i] = currentChar;
+            ReverseTable[j][ i] = MapTable.Map[currentChar].ReCharacter;
+            //Scores[j] += MapTable.Map[currentChar].SmallValues;
+            ReverseScores[j] += MapTable.Map[currentChar].ReSmallValues;
+            
+            
+        }
+        private void FillScoreTables(int inputLenght)
+        {
+            int fraction = inputLenght % 4;
+            int takeLenght = inputLenght / 4 + 1;
+            if (fraction == 0)
+            {
+                takeLenght--;
+            }
+            
+            int i=0, j=0;
+            for (int k = 0; k < 4; k++)
+            {
+                for (int n = 0; n < takeLenght; n++)
+                {
+                    Scores[k] += MapTable.Map[MidTable[j][i]].SmallValues;
+                }
+                if(fraction > 1)
+                {
+                    fraction--;
+
+                }
+                else if (fraction == 1)
+                {
+                    fraction--;
+                    takeLenght--;
+                }
+            }
         }
         private DataTable CreateTable()
         {
@@ -61,18 +96,6 @@ namespace Abjad.Code
                 result.Columns.Add(column);
             }
             return result;
-        }
-        private void AddToTables(int i, int j,char currentChar)
-        {
-            Table[j][ i] = currentChar;
-            ReverseTable[j][ i] = MapTable.Map[currentChar].ReCharacter;
-            Scores[j] += MapTable.Map[currentChar].SmallValues;
-            ReverseScores[j] += MapTable.Map[currentChar].ReSmallValues;
-            
-            
-            DataRow row = InitialDataTable.NewRow();
-            row[(j+1).ToString()] = currentChar + ", " + MapTable.Map[currentChar].SmallValues.ToString();
-            InitialDataTable.Rows.Add(row);
         }
     }
 }

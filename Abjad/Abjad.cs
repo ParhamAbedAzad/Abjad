@@ -53,7 +53,7 @@ namespace Abjad
 				DataTable dtb1;
 
 
-				dtb1 = variant.Fill(input);
+				 variant.Fill(input);
 				string outp = "line1:" + variant.Scores[0].ToString() + "\nline2:" + 
 					variant.Scores[1].ToString() + "\nline3:" + 
 					variant.Scores[2].ToString() + "\nline4:" + 
@@ -140,5 +140,11 @@ namespace Abjad
         {
             return new Point(A.X + B.X, A.Y + B.Y);
         }
-	}
+        
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+    }
 }

@@ -9,7 +9,7 @@ namespace Abjad.Code
 {
     class Variant2 : Variant
     {
-        public override DataTable Fill(string input)
+        public override void Fill(string input)
         {
             throw new NotImplementedException();
         }

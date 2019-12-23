@@ -23,10 +23,8 @@ namespace Abjad.Code
         public char[][] ReverseTable { get; set; } = new char[4][];
         public int[] ReverseScores { get; set; } = new int[4];
         internal Table MapTable { get; set; } = new Table();
-        public DataTable MidDataTable { get; set; }
-        public DataTable InitialDataTable { get; set; }
         
-		public virtual DataTable Fill(string input)
+		public virtual void Fill(string input)
         {
             throw new NotSupportedException();
         }
