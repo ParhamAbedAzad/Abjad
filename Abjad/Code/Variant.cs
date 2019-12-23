@@ -10,7 +10,6 @@ namespace Abjad.Code
     class Variant
     {
 		public const int MAX_INPUT_SIZE = 2000;
-		private Table mapTable;
 
 		public char[][] MidTable { get; set; } = new char[4][];
 		public char[][] Table { get; set; } = new char[4][];
@@ -22,7 +21,6 @@ namespace Abjad.Code
         public char[][] MidReverseTable { get; set; } = new char[4][];
         public char[][] ReverseTable { get; set; } = new char[4][];
         public int[] ReverseScores { get; set; } = new int[4];
-        internal Table MapTable { get; set; } = new Table();
         
 		public virtual void Fill(string input)
         {

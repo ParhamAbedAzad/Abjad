@@ -6,18 +6,27 @@ using System.Threading.Tasks;
 
 namespace Abjad.Code
 {
-    class Table
+    static class MapTable
     {
-		public Dictionary<char, Rows> Map { get; set; }
-		public Table()
-		{
-			Map.Add('ا' , new Rows('ا',1,1,'ج',3,3));
-			Map.Add('ح', new Rows('ح', 8, 8, 'و', 6, 6));
-			Map.Add('ط', new Rows('ط', 9, 9, 'ک', 11, 20));
-			Map.Add('ع', new Rows('ع', 16, 70, 'ن', 14, 50));
-			Map.Add('a', new Rows('ا', 1, 1, 'ج', 3, 3));
-		}
+        public static Dictionary<char, int> MapScore { get; set; } = new Dictionary<char, int>()
+        {
+            {'c',1},
+            {'d',3},
+            {'f',4}
+        };
 
-	
-	}
+        public static Dictionary<char, Rows> MapRow1 { get; set; } = new Dictionary<char, Rows>()
+        {
+            {'c',new Rows('c','d','f')}
+        };
+        public static Dictionary<char, Rows> MapRow2 { get; set; } = new Dictionary<char, Rows>()
+        {
+            {'c',new Rows('c','d','f')}
+        };
+        public static Dictionary<char, Rows> MapRow3 { get; set; } = new Dictionary<char, Rows>()
+        {
+            {'c',new Rows('c','d','f')}
+        };
+
+    }
 }

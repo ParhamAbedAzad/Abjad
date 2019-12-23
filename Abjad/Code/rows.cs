@@ -7,29 +7,22 @@ using System.Threading.Tasks;
 namespace Abjad.Code
 {
 	class Rows
-	{
-		private char character;
-		private int smallValues;
-		private int bigValues;
-		private char reCharacter;
-		private int reSmallValues;
-		private int reBigValues;
+    {
+        public char Character { get; set; }
+        public int Values { get; set; }
+        public char ReCharacter { get; set; }
+		public int ReValues { get; set; }
+        public char NaCharacter { get; set; }
+		public int NaValues { get; set; }
 
-		public char Character { get => character; set => character = value; }
-		public int SmallValues { get => smallValues; set => smallValues = value; }
-		public int BigValues { get => bigValues; set => bigValues = value; }
-		public char ReCharacter { get => reCharacter; set => reCharacter = value; }
-		public int ReSmallValues { get => reSmallValues; set => reSmallValues = value; }
-		public int ReBigValues { get => reBigValues; set => reBigValues = value; }
-
-		public Rows(char character, int smallValues, int bigValues, char reCharacter, int reSmallValues, int reBigValues)
+		public Rows(char character, char reCharacter,char naCharacter)
 		{
-			this.Character = character;
-			this.SmallValues = smallValues;
-			this.BigValues = bigValues;
+            this.Character = character;
 			this.ReCharacter = reCharacter;
-			this.ReSmallValues = reSmallValues;
-			this.ReBigValues = reBigValues;
+			this.ReCharacter = naCharacter;
+			this.Values = MapTable.MapScore[Character];
+			this.ReValues = MapTable.MapScore[reCharacter];
+			this.NaValues = MapTable.MapScore[naCharacter];
 		}
 	}
 }
