@@ -32,5 +32,12 @@ namespace Abjad.Code
         {
             throw new NotSupportedException();
         }
+        public override String ToString()
+        {
+            return "line1:" + Scores[0].ToString() + "\nline2:" +
+                    Scores[1].ToString() + "\nline3:" +
+                    Scores[2].ToString() + "\nline4:" +
+                    Scores[3].ToString(); ;
+        }
     }
 }

@@ -67,16 +67,24 @@ namespace Abjad.Code
             }
             
             int i=0, j=0;
-            for (int k = 0; k < 4; k++)
+            for (int k = 0;k < 4; k++)
             {
                 for (int n = 0; n < takeLenght; n++)
                 {
                     Scores[k] += MapTable.Map[MidTable[j][i]].SmallValues;
+                    if(j == 3)
+                    {
+                        j = 0;
+                        i++;
+                    }
+                    else
+                    {
+                        j++;
+                    }
                 }
                 if(fraction > 1)
                 {
                     fraction--;
-
                 }
                 else if (fraction == 1)
                 {

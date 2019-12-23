@@ -32,32 +32,22 @@ namespace Abjad
 		{
 			try
 			{
-				Variant variant;
 				//insert code here!
 				String input = checkAndTrimInput();
-				switch (comboVariant.Text)
-				{
-					case "Variant1":
-						variant = new Variant1();
-						break;
-					case "Variant2":
-						variant = new Variant1();
-						break;
-					case "Variant3":
-						variant = new Variant1();
-						break;
-					default:
-						throw new Exception("no variant selected");
-				}
 
-				DataTable dtb1;
+                Variant1 variant1 = new Variant1();
+                Variant2 variant2 = new Variant2();
+                Variant3 variant3 = new Variant3();
+                
 
 
-				 variant.Fill(input);
-				string outp = "line1:" + variant.Scores[0].ToString() + "\nline2:" + 
-					variant.Scores[1].ToString() + "\nline3:" + 
-					variant.Scores[2].ToString() + "\nline4:" + 
-					variant.Scores[3].ToString() ;
+				 variant1.Fill(input);
+				 variant2.Fill(input);
+				 variant3.Fill(input);
+                string outp = variant1.ToString() + "\n" + 
+                    variant2.ToString() + "\n"  +
+                    variant3.ToString() + "\n" ;
+                
 
 				MessageBox.Show(outp);
 				//variant.Calculate();
