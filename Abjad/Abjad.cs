@@ -87,11 +87,7 @@ namespace Abjad
         {
 			
         }
-        private void ComboLang_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            richTextBox1.RightToLeft = (comboLang.Text == "English") ? RightToLeft.No : RightToLeft.Yes;
-			
-		}
+      
 
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
         {

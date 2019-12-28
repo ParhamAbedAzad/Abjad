@@ -28,11 +28,11 @@ namespace Abjad.Code
 			char currentChar;
 
 			int length = input.Length;
-			if (length % 2 == 0)
+			if (length % 2 == 0) //even input length
 			{
 				int i = 0;
 				int j = 0;
-				
+
 				for (int cn = 0; cn < length / 2; cn++)
 				{
 					currentChar = input[cn];
@@ -51,7 +51,7 @@ namespace Abjad.Code
 					++j;
 				}
 			}
-			else
+			else //odd input length
 			{
 				int i = 0;
 				int j = 0;
@@ -59,16 +59,18 @@ namespace Abjad.Code
 				{
 					currentChar = input[cn];
 					MidNazirTable[i][j] = currentChar;
+					++j;
 				}
 
 				string substring = input.Substring(length / 2 + 1);
 				string inputReverse = (string) substring.Reverse();
 				++i;
-				j = 1;
+				j = 0;
 				for (int cn = 0; cn < length / 2; cn++)
 				{
 					currentChar = input[cn];
 					MidNazirTable[i][j] = currentChar;
+					++j;
 				}
 			}
 		}
