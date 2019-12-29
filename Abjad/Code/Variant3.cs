@@ -19,7 +19,6 @@ namespace Abjad.Code
             {
                 throw new InvalidInputException("bigger than " + MAX_INPUT_SIZE + " chars");
             }
-            int incValue = 1;
             int i = 0;
             int j = 0; //from 0 to 3
             int length = input.Length;
@@ -29,31 +28,31 @@ namespace Abjad.Code
             {
                 currentChar = input[cn];
                 AddToTables(i, j, currentChar);
-                if ((j == 3 && incValue == 1) || (j == 0 && incValue == -1))
+                if (j == 3)
                 {
-                    incValue = -1 * incValue;
                     i++;
+                    j = 0;
                 }
                 else
                 {
-                    j += incValue;
+                    j++;
                 }
             }
             MidTable[0] = Table[0];
             MidTable[1] = Table[3];
-            Array.Reverse(MidTable[1]);
+            Array.Reverse(MidTable[1], 0, (length / 4 + (length % 4 > 2 ? 1 : 0)));
             MidTable[2] = Table[1];
             MidTable[3] = Table[2];
-            Array.Reverse(MidTable[3]);
+            Array.Reverse(MidTable[3], 0, (length / 4 + (length % 4 > 1 ? 1 : 0)));
             FillScoreTables(length);
         }
 
         private void AddToTables(int i, int j, char currentChar)
         {
             Table[j][i] = currentChar;
-            ReverseTable[j][i] = MapTable.MapRow1[currentChar].ReCharacter;
+            ReverseTable[j][i] = MapTable.MapRow3[currentChar].ReCharacter;
             //Scores[j] += MapTable.Map[currentChar].SmallValues;
-            ReverseScores[j] += MapTable.MapRow1[currentChar].ReValues;
+            ReverseScores[j] += MapTable.MapRow3[currentChar].ReValues;
 
 
         }
@@ -71,7 +70,15 @@ namespace Abjad.Code
             {
                 for (int n = 0; n < takeLenght; n++)
                 {
-                    Scores[k] += MapTable.MapRow1[MidTable[j][i]].Values;
+
+                    if (MidTable[j][i] != 0)
+                    {
+                        Scores[k] += MapTable.MapRow3[MidTable[j][i]].Values;
+                    }
+                    else
+                    {
+                        n--;
+                    }
                     if (j == 3)
                     {
                         j = 0;

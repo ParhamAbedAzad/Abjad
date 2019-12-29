@@ -40,8 +40,10 @@ namespace Abjad
 
 				 variant1.Fill(input);
 				 variant2.Fill(input);
-                string outp = variant1.ToString() + "\n" +
-                    variant2.ToString() + "\n";
+                 variant3.Fill(input);
+                string outp = variant1.ToString() + "\n"
+                    + variant2.ToString() + "\n"
+                + variant3.ToString();
                 
 
 				MessageBox.Show(outp);

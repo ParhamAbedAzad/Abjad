@@ -51,9 +51,9 @@ namespace Abjad.Code
 		private void AddToTables(int i, int j, char currentChar)
 		{
 			Table[j][i] = currentChar;
-			ReverseTable[j][i] = MapTable.MapRow1[currentChar].ReCharacter;
+			ReverseTable[j][i] = MapTable.MapRow2[currentChar].ReCharacter;
 			//Scores[j] += MapTable.Map[currentChar].SmallValues;
-			ReverseScores[j] += MapTable.MapRow1[currentChar].ReValues;
+			ReverseScores[j] += MapTable.MapRow2[currentChar].ReValues;
 
 
 		}
@@ -71,7 +71,14 @@ namespace Abjad.Code
 			{
 				for (int n = 0; n < takeLenght; n++)
 				{
-					Scores[k] += MapTable.MapRow1[MidTable[j][i]].Values;
+                    if (MidTable[j][i] != 0)
+                    {
+                        Scores[k] += MapTable.MapRow2[MidTable[j][i]].Values;
+                    }
+                    else
+                    {
+                        n--;
+                    }
 					if (j == 3)
 					{
 						j = 0;
