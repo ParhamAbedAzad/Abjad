@@ -11,15 +11,45 @@ namespace Abjad.Code
     {
 		public const int MAX_INPUT_SIZE = 2000;
 
-		public char[][] MidTable { get; set; } = new char[4][];
-		public char[][] Table { get; set; } = new char[4][];
+        public char[][] MidTable { get; set; } = new char[4][]{
+                            new char[500],
+                            new char[500],
+                            new char[500],
+                            new char[500],
+                        };
+        public char[][] Table { get; set; } = new char[4][]{
+                            new char[500],
+                            new char[500],
+                            new char[500],
+                            new char[500],
+                        };
 
         public int[] Scores { get; set; } = new int[4];
-		public char[][] MidNazirTable { get; set; } = new char[4][];
-		public char[][] NazirTable { get; set; } = new char[4][];
-		public int[] NazirScores { get; set; } = new int[4];
-        public char[][] MidReverseTable { get; set; } = new char[4][];
-        public char[][] ReverseTable { get; set; } = new char[4][];
+        public char[][] MidNazirTable { get; set; } = new char[4][]{
+                            new char[500],
+                            new char[500],
+                            new char[500],
+                            new char[500],
+                        };
+        public char[][] NazirTable { get; set; } = new char[4][]{
+                            new char[500],
+                            new char[500],
+                            new char[500],
+                            new char[500],
+                        };
+        public int[] NazirScores { get; set; } = new int[4];
+        public char[][] MidReverseTable { get; set; } = new char[4][]{
+                            new char[500],
+                            new char[500],
+                            new char[500],
+                            new char[500],
+                        };
+        public char[][] ReverseTable { get; set; } = new char[4][]{
+                            new char[500],
+                            new char[500],
+                            new char[500],
+                            new char[500],
+                        };
         public int[] ReverseScores { get; set; } = new int[4];
         
 		public virtual void Fill(string input)

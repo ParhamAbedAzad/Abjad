@@ -41,7 +41,8 @@ namespace Abjad.Code
 				}
 
 				string substring = input.Substring(length / 2);
-				string inputReverse = (string) substring.Reverse();
+				string inputReverse = substring.Reverse().ToString();
+                //that was wrong buddy :)
 				++i;
 				j = 0;
 				for (int cn = 0; cn < length / 2; cn++)

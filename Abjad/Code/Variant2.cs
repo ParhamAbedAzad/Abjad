@@ -41,10 +41,10 @@ namespace Abjad.Code
 			}
 			MidTable[0] = Table[0];
 			MidTable[1] = Table[3];
-			Array.Reverse(MidTable[1]);
+			Array.Reverse(MidTable[1],0,(length/4 + (length%4 > 2 ? 1:0 )));
 			MidTable[2] = Table[1];
 			MidTable[3] = Table[2];
-			Array.Reverse(MidTable[3]);
+			Array.Reverse(MidTable[3],0,(length/4 + (length%4 > 1 ? 1:0 )));
 			FillScoreTables(length);
 		}
 
