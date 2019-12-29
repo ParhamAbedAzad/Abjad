@@ -23,7 +23,8 @@ namespace Abjad.Code
 			}
 
 			FillMidTable(input);
-			FillTableAndCalculate(input.Length);
+			int partitionSize = FillTable(input.Length);
+			CalculateScores(partitionSize);
 		}
 
 		public void CalculateScores(int colNum)
@@ -34,12 +35,12 @@ namespace Abjad.Code
 				{
 					Scores[i] += MapTable.MapRow1[Table[i][j]].Values;
 					NazirScores[i] += MapTable.MapRow1[Table[i][j]].NaValues;
-
+					ReverseScores[i] += MapTable.MapRow1[Table[i][j]].ReValues;
 				}
 			}
 		}
 
-		private void FillTableAndCalculate(int length)
+		private int FillTable(int length)
 		{
 			int partitionSize = 0;
 			bool odd = false;
@@ -71,13 +72,13 @@ namespace Abjad.Code
 					}
 					catch (Exception e)
 					{
-						MessageBox.Show(e.StackTrace, "oops! something went wrong at var1 FillTableAndCalculate",
+						MessageBox.Show(e.StackTrace, "oops! something went wrong at var1 FillTable",
 							MessageBoxButtons.OK, MessageBoxIcon.Error);
 					}
 				}
 			}
 
-			CalculateScores(partitionSize);
+			return partitionSize;
 		}
 
 		private void FillMidTable(string input)
