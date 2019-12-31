@@ -55,21 +55,22 @@ namespace Abjad
 			}
 			catch (InvalidInputException e1)
 			{
-				if (e1.Message != null)
-					MessageBox.Show(e1.Message);
-				else
-					MessageBox.Show(e1.StackTrace);
+				MessageBox.Show(e1.Message ?? e1.StackTrace);
+				
 			}
 			catch (NotImplementedException)
 			{
 				MessageBox.Show("feature not yet implemented it will be added in future updates");
+				
 			}
 			catch (Exception e3)
 			{
 				if (e3.Message == null)
 					MessageBox.Show(e3.StackTrace,"oops! something went wrong",MessageBoxButtons.OK,MessageBoxIcon.Error);
 				else
-					MessageBox.Show(e3.Message,"Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show(e3.Message + "\n" + e3.StackTrace,"Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+				//throw;
+				//ytf u throw exception to close the entire fucking app ? 
 			}
 		}
 
@@ -97,6 +98,7 @@ namespace Abjad
         private String checkAndTrimInput()
         {
 			String input = richTextBox1.Text.Replace(" ", "");
+			//input = richTextBox1.Text.Replace("\n", "");
 			return input;
         }
 		

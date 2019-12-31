@@ -12,7 +12,7 @@ namespace Abjad.Code
         public Variant3() : base()
         {
         }
-        public void Fill(string input)
+        public override void Fill(string input)
         {
             char currentChar;
             if (input.Length > MAX_INPUT_SIZE)
