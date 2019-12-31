@@ -84,7 +84,6 @@ namespace Abjad
 		{
 			String input = richTextBox1.Text.Replace(" ", "");
 			input = richTextBox1.Text.Replace("\n", "");
-
 			return input;
 		}
 
