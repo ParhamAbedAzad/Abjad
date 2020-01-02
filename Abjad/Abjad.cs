@@ -13,7 +13,7 @@ namespace Abjad
 
 	public partial class AbjadMainForm : Form
 	{
-
+		private const string PLACE_HOLDER = "enter text here...";
 		public AbjadMainForm()
 		{
 			InitializeComponent();
@@ -54,6 +54,11 @@ namespace Abjad
 			{
 				MessageBox.Show("feature not yet implemented it will be added in future updates");
 			}
+			catch (NoNullAllowedException e2)
+			{
+				MessageBox.Show(e2.Message, "oops! something went wrong", MessageBoxButtons.OK,
+					MessageBoxIcon.Warning);
+			}
 			catch (Exception e3)
 			{
 				if (e3.Message == null)
@@ -86,25 +91,36 @@ namespace Abjad
 		private void RichTextBox1_Enter(object sender, EventArgs e)
 		{
 			richTextBox1.ForeColor = Color.White;
-			if (richTextBox1.Text == "Enter text ...")
-			{
-				richTextBox1.Text = _defines.PLACEHOLDER;
-			}
-		}
-
-		private void RichTextBox1_Leave(object sender, EventArgs e)
-		{
-			if (richTextBox1.Text == "")
+			
+			if (richTextBox1.Text == PLACE_HOLDER)
 			{
 				richTextBox1.Text = "";
+			}
+		}
+	
+		private void RichTextBox1_Leave(object sender, EventArgs e)
+		{
+			
+			if (richTextBox1.Text == "")
+			{
+				richTextBox1.Text = PLACE_HOLDER;
 				richTextBox1.ForeColor = Color.Gray;
 			}
 		}
 
 		private String checkAndTrimInput()
 		{
-			String input = richTextBox1.Text.Replace(" ", "");
-			input = richTextBox1.Text.Replace("\n", "");
+			String input = richTextBox1.Text;
+			if (input == PLACE_HOLDER )
+			{
+				throw new NoNullAllowedException("enter the text first");
+			}
+			input = richTextBox1.Text.Replace(" ", "");
+			input = input.Replace("\n", "");
+			if (input == "")
+			{
+				throw new NoNullAllowedException("enter the text first (only white space and Enter are not text)");
+			}
 			return input;
 		}
 
