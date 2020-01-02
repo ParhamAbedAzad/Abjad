@@ -8,15 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Abjad.Code;
+
 namespace Abjad
 {
-
 	public partial class AbjadMainForm : Form
 	{
 		private const string PLACE_HOLDER = "enter text here...";
+
 		public AbjadMainForm()
 		{
 			InitializeComponent();
+			AlignCenterAll();
 		}
 
 		private void Button1_Click(object sender, EventArgs e)
@@ -56,8 +58,7 @@ namespace Abjad
 			}
 			catch (NoNullAllowedException e2)
 			{
-				MessageBox.Show(e2.Message, "oops! something went wrong", MessageBoxButtons.OK,
-					MessageBoxIcon.Warning);
+				MessageBox.Show(e2.Message, "oops! something went wrong", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 			}
 			catch (Exception e3)
 			{
@@ -88,19 +89,19 @@ namespace Abjad
 		{
 			// Trace: button1.Location = AddPoints(richTextBox1.GetPositionFromCharIndex(richTextBox1.SelectionStart),richTextBox1.Location) - button1.Size;
 		}
+
 		private void RichTextBox1_Enter(object sender, EventArgs e)
 		{
 			richTextBox1.ForeColor = Color.White;
-			
+
 			if (richTextBox1.Text == PLACE_HOLDER)
 			{
 				richTextBox1.Text = "";
 			}
 		}
-	
+
 		private void RichTextBox1_Leave(object sender, EventArgs e)
 		{
-			
 			if (richTextBox1.Text == "")
 			{
 				richTextBox1.Text = PLACE_HOLDER;
@@ -111,16 +112,18 @@ namespace Abjad
 		private String checkAndTrimInput()
 		{
 			String input = richTextBox1.Text;
-			if (input == PLACE_HOLDER )
+			if (input == PLACE_HOLDER)
 			{
 				throw new NoNullAllowedException("enter the text first");
 			}
+
 			input = richTextBox1.Text.Replace(" ", "");
 			input = input.Replace("\n", "");
 			if (input == "")
 			{
 				throw new NoNullAllowedException("enter the text first (only white space and Enter are not text)");
 			}
+
 			return input;
 		}
 
@@ -151,7 +154,6 @@ namespace Abjad
 
 		private void label3_Click(object sender, EventArgs e)
 		{
-
 		}
 
 		private void label3_MouseEnter(object sender, EventArgs e)
@@ -163,6 +165,7 @@ namespace Abjad
 		{
 			label3.ForeColor = Color.FromArgb(170, 170, 170);
 		}
+
 		private void label2_MouseEnter(object sender, EventArgs e)
 		{
 			label2.ForeColor = Color.White;
@@ -172,6 +175,7 @@ namespace Abjad
 		{
 			label2.ForeColor = Color.FromArgb(170, 170, 170);
 		}
+
 		private void label5_MouseEnter(object sender, EventArgs e)
 		{
 			label5.ForeColor = Color.White;
@@ -182,6 +186,56 @@ namespace Abjad
 			label5.ForeColor = Color.FromArgb(170, 170, 170);
 		}
 
-		
+		private void AlignCenterAll()
+		{
+			{
+				richTextBox2.SelectAll();
+				richTextBox2.SelectionAlignment = HorizontalAlignment.Center;
+				richTextBox2.DeselectAll();
+
+				richTextBox3.SelectAll();
+				richTextBox3.SelectionAlignment = HorizontalAlignment.Center;
+				richTextBox3.DeselectAll();
+
+				richTextBox4.SelectAll();
+				richTextBox4.SelectionAlignment = HorizontalAlignment.Center;
+				richTextBox4.DeselectAll();
+
+				richTextBox5.SelectAll();
+				richTextBox5.SelectionAlignment = HorizontalAlignment.Center;
+				richTextBox5.DeselectAll();
+			}
+			{
+				richTextBox6.SelectAll();
+				richTextBox6.SelectionAlignment = HorizontalAlignment.Center;
+				richTextBox6.DeselectAll();
+
+				richTextBox7.SelectAll();
+				richTextBox7.SelectionAlignment = HorizontalAlignment.Center;
+				richTextBox7.DeselectAll();
+
+				richTextBox8.SelectAll();
+				richTextBox8.SelectionAlignment = HorizontalAlignment.Center;
+				richTextBox8.DeselectAll();
+
+				richTextBox9.SelectAll();
+				richTextBox9.SelectionAlignment = HorizontalAlignment.Center;
+				richTextBox9.DeselectAll();
+			}
+			{
+				richTextBox10.SelectAll();
+				richTextBox10.SelectionAlignment = HorizontalAlignment.Center;
+				richTextBox10.DeselectAll();
+				richTextBox11.SelectAll();
+				richTextBox11.SelectionAlignment = HorizontalAlignment.Center;
+				richTextBox11.DeselectAll();
+				richTextBox12.SelectAll();
+				richTextBox12.SelectionAlignment = HorizontalAlignment.Center;
+				richTextBox12.DeselectAll();
+				richTextBox13.SelectAll();
+				richTextBox13.SelectionAlignment = HorizontalAlignment.Center;
+				richTextBox13.DeselectAll();
+			}
+		}
 	}
 }
