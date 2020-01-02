@@ -37,7 +37,7 @@ namespace Abjad
 				variant2.Fill(input);
 				variant3.Fill(input);
 				string outp = variant1.ToString() + "\n" + variant2.ToString() + "\n" + variant3.ToString();
-
+				richTextBox2.Text = variant1.Scores[0].ToString();
 				MessageBox.Show(outp);
 				//variant.Calculate();
 				//show variant in a table
@@ -79,6 +79,23 @@ namespace Abjad
 		{
 			// Trace: button1.Location = AddPoints(richTextBox1.GetPositionFromCharIndex(richTextBox1.SelectionStart),richTextBox1.Location) - button1.Size;
 		}
+		private void RichTextBox1_Enter(object sender, EventArgs e)
+		{
+			richTextBox1.ForeColor = Color.White;
+			if (richTextBox1.Text == "Enter text ...")
+			{
+				richTextBox1.Text = "";
+			}
+		}
+
+		private void RichTextBox1_Leave(object sender, EventArgs e)
+		{
+			if (richTextBox1.Text == "")
+			{
+				richTextBox1.Text = "Enter text ...";
+				richTextBox1.ForeColor = Color.Gray;
+			}
+		}
 
 		private String checkAndTrimInput()
 		{
@@ -110,6 +127,11 @@ namespace Abjad
 
 		private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
 		{
+		}
+
+		private void label3_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
