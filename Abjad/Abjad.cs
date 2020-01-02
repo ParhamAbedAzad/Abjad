@@ -8,11 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Abjad.Code;
-
 namespace Abjad
 {
+
 	public partial class AbjadMainForm : Form
 	{
+
 		public AbjadMainForm()
 		{
 			InitializeComponent();
@@ -38,6 +39,9 @@ namespace Abjad
 				variant3.Fill(input);
 				string outp = variant1.ToString() + "\n" + variant2.ToString() + "\n" + variant3.ToString();
 				richTextBox2.Text = variant1.Scores[0].ToString();
+				richTextBox3.Text = variant1.Scores[1].ToString();
+				richTextBox4.Text = variant1.Scores[2].ToString();
+				richTextBox5.Text = variant1.Scores[3].ToString();
 				MessageBox.Show(outp);
 				//variant.Calculate();
 				//show variant in a table
@@ -84,7 +88,7 @@ namespace Abjad
 			richTextBox1.ForeColor = Color.White;
 			if (richTextBox1.Text == "Enter text ...")
 			{
-				richTextBox1.Text = "";
+				richTextBox1.Text = _defines.PLACEHOLDER;
 			}
 		}
 
@@ -92,7 +96,7 @@ namespace Abjad
 		{
 			if (richTextBox1.Text == "")
 			{
-				richTextBox1.Text = "Enter text ...";
+				richTextBox1.Text = "";
 				richTextBox1.ForeColor = Color.Gray;
 			}
 		}
@@ -133,5 +137,35 @@ namespace Abjad
 		{
 
 		}
+
+		private void label3_MouseEnter(object sender, EventArgs e)
+		{
+			label3.ForeColor = Color.White;
+		}
+
+		private void label3_MouseLeave(object sender, EventArgs e)
+		{
+			label3.ForeColor = Color.FromArgb(170, 170, 170);
+		}
+		private void label2_MouseEnter(object sender, EventArgs e)
+		{
+			label2.ForeColor = Color.White;
+		}
+
+		private void label2_MouseLeave(object sender, EventArgs e)
+		{
+			label2.ForeColor = Color.FromArgb(170, 170, 170);
+		}
+		private void label5_MouseEnter(object sender, EventArgs e)
+		{
+			label5.ForeColor = Color.White;
+		}
+
+		private void label5_MouseLeave(object sender, EventArgs e)
+		{
+			label5.ForeColor = Color.FromArgb(170, 170, 170);
+		}
+
+		
 	}
 }
