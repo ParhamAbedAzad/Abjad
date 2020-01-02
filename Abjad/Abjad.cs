@@ -29,24 +29,18 @@ namespace Abjad
 		{
 			try
 			{
-				//insert code here!
 				String input = checkAndTrimInput();
-
 				Variant1 variant1 = new Variant1();
 				Variant2 variant2 = new Variant2();
 				Variant3 variant3 = new Variant3();
-
 				variant1.Fill(input);
 				variant2.Fill(input);
 				variant3.Fill(input);
-				string outp = variant1.ToString() + "\n" + variant2.ToString() + "\n" + variant3.ToString();
-				richTextBox2.Text = variant1.Scores[0].ToString();
-				richTextBox3.Text = variant1.Scores[1].ToString();
-				richTextBox4.Text = variant1.Scores[2].ToString();
-				richTextBox5.Text = variant1.Scores[3].ToString();
-				MessageBox.Show(outp);
-				//variant.Calculate();
-				//show variant in a table
+				UpdateTextBoxes(variant1,variant2,variant3);
+				AlignCenterAll();
+				//string outp = variant1.ToString() + "\n" + variant2.ToString() + "\n" + variant3.ToString();
+				//MessageBox.Show(outp);
+				//history now, those codes are -master yoda
 			}
 			catch (InvalidInputException e1)
 			{
@@ -71,6 +65,25 @@ namespace Abjad
 				//throw;
 				//ytf u throw exception to close the entire fucking app after small error ? 
 			}
+		}
+
+		private void UpdateTextBoxes(Variant1 variant1, Variant2 variant2, Variant3 variant3)
+		{
+			richTextBox2.Text = variant1.Scores[0].ToString();
+			richTextBox3.Text = variant1.Scores[1].ToString();
+			richTextBox4.Text = variant1.Scores[2].ToString();
+			richTextBox5.Text = variant1.Scores[3].ToString();
+
+			richTextBox6.Text = variant1.NazirScores[0].ToString();
+			richTextBox7.Text = variant1.NazirScores[1].ToString();
+			richTextBox8.Text = variant1.NazirScores[2].ToString();
+			richTextBox9.Text = variant1.NazirScores[3].ToString();
+
+			richTextBox10.Text = variant1.ReverseScores[0].ToString();
+			richTextBox11.Text = variant1.ReverseScores[1].ToString();
+			richTextBox12.Text = variant1.ReverseScores[2].ToString();
+			richTextBox13.Text = variant1.ReverseScores[3].ToString();
+			
 		}
 
 		private void Label1_Click(object sender, EventArgs e)

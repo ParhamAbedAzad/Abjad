@@ -50,7 +50,6 @@
 			this.richTextBox6 = new System.Windows.Forms.RichTextBox();
 			this.richTextBox2 = new System.Windows.Forms.RichTextBox();
 			this.tabPage4 = new System.Windows.Forms.TabPage();
-			this.tabPage5 = new System.Windows.Forms.TabPage();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
@@ -66,6 +65,7 @@
 			this.richTextBox23 = new System.Windows.Forms.RichTextBox();
 			this.richTextBox24 = new System.Windows.Forms.RichTextBox();
 			this.richTextBox25 = new System.Windows.Forms.RichTextBox();
+			this.tabPage5 = new System.Windows.Forms.TabPage();
 			this.label8 = new System.Windows.Forms.Label();
 			this.label9 = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
@@ -210,7 +210,7 @@
 			this.richTextBox13.BackColor = System.Drawing.Color.Black;
 			this.richTextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox13.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox13.Location = new System.Drawing.Point(548, 197);
 			this.richTextBox13.Name = "richTextBox13";
 			this.richTextBox13.ReadOnly = true;
@@ -224,7 +224,7 @@
 			this.richTextBox9.BackColor = System.Drawing.Color.Black;
 			this.richTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox9.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox9.Location = new System.Drawing.Point(308, 197);
 			this.richTextBox9.Name = "richTextBox9";
 			this.richTextBox9.ReadOnly = true;
@@ -238,7 +238,7 @@
 			this.richTextBox5.BackColor = System.Drawing.Color.Black;
 			this.richTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox5.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox5.Location = new System.Drawing.Point(68, 197);
 			this.richTextBox5.Name = "richTextBox5";
 			this.richTextBox5.ReadOnly = true;
@@ -252,7 +252,7 @@
 			this.richTextBox12.BackColor = System.Drawing.Color.Black;
 			this.richTextBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox12.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox12.Location = new System.Drawing.Point(548, 148);
 			this.richTextBox12.Name = "richTextBox12";
 			this.richTextBox12.ReadOnly = true;
@@ -266,7 +266,7 @@
 			this.richTextBox8.BackColor = System.Drawing.Color.Black;
 			this.richTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox8.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox8.Location = new System.Drawing.Point(308, 148);
 			this.richTextBox8.Name = "richTextBox8";
 			this.richTextBox8.ReadOnly = true;
@@ -280,7 +280,7 @@
 			this.richTextBox4.BackColor = System.Drawing.Color.Black;
 			this.richTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox4.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox4.Location = new System.Drawing.Point(68, 148);
 			this.richTextBox4.Name = "richTextBox4";
 			this.richTextBox4.ReadOnly = true;
@@ -294,7 +294,7 @@
 			this.richTextBox11.BackColor = System.Drawing.Color.Black;
 			this.richTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox11.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox11.Location = new System.Drawing.Point(548, 99);
 			this.richTextBox11.Name = "richTextBox11";
 			this.richTextBox11.ReadOnly = true;
@@ -308,7 +308,7 @@
 			this.richTextBox7.BackColor = System.Drawing.Color.Black;
 			this.richTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox7.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox7.Location = new System.Drawing.Point(308, 99);
 			this.richTextBox7.Name = "richTextBox7";
 			this.richTextBox7.ReadOnly = true;
@@ -322,7 +322,7 @@
 			this.richTextBox3.BackColor = System.Drawing.Color.Black;
 			this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox3.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox3.Location = new System.Drawing.Point(68, 99);
 			this.richTextBox3.Name = "richTextBox3";
 			this.richTextBox3.ReadOnly = true;
@@ -336,7 +336,7 @@
 			this.richTextBox10.BackColor = System.Drawing.Color.Black;
 			this.richTextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox10.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox10.Location = new System.Drawing.Point(548, 50);
 			this.richTextBox10.Name = "richTextBox10";
 			this.richTextBox10.ReadOnly = true;
@@ -350,7 +350,7 @@
 			this.richTextBox6.BackColor = System.Drawing.Color.Black;
 			this.richTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox6.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox6.Location = new System.Drawing.Point(308, 50);
 			this.richTextBox6.Name = "richTextBox6";
 			this.richTextBox6.ReadOnly = true;
@@ -364,7 +364,7 @@
 			this.richTextBox2.BackColor = System.Drawing.Color.Black;
 			this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox2.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox2.Location = new System.Drawing.Point(68, 50);
 			this.richTextBox2.Name = "richTextBox2";
 			this.richTextBox2.ReadOnly = true;
@@ -396,30 +396,6 @@
 			this.tabPage4.Size = new System.Drawing.Size(850, 265);
 			this.tabPage4.TabIndex = 2;
 			this.tabPage4.Text = "variant2";
-			// 
-			// tabPage5
-			// 
-			this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-			this.tabPage5.Controls.Add(this.label8);
-			this.tabPage5.Controls.Add(this.label9);
-			this.tabPage5.Controls.Add(this.label10);
-			this.tabPage5.Controls.Add(this.richTextBox26);
-			this.tabPage5.Controls.Add(this.richTextBox27);
-			this.tabPage5.Controls.Add(this.richTextBox28);
-			this.tabPage5.Controls.Add(this.richTextBox29);
-			this.tabPage5.Controls.Add(this.richTextBox30);
-			this.tabPage5.Controls.Add(this.richTextBox31);
-			this.tabPage5.Controls.Add(this.richTextBox32);
-			this.tabPage5.Controls.Add(this.richTextBox33);
-			this.tabPage5.Controls.Add(this.richTextBox34);
-			this.tabPage5.Controls.Add(this.richTextBox35);
-			this.tabPage5.Controls.Add(this.richTextBox36);
-			this.tabPage5.Controls.Add(this.richTextBox37);
-			this.tabPage5.Location = new System.Drawing.Point(4, 25);
-			this.tabPage5.Name = "tabPage5";
-			this.tabPage5.Size = new System.Drawing.Size(850, 265);
-			this.tabPage5.TabIndex = 3;
-			this.tabPage5.Text = "variant3";
 			// 
 			// label4
 			// 
@@ -459,7 +435,7 @@
 			this.richTextBox14.BackColor = System.Drawing.Color.Black;
 			this.richTextBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox14.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox14.Location = new System.Drawing.Point(548, 197);
 			this.richTextBox14.Name = "richTextBox14";
 			this.richTextBox14.ReadOnly = true;
@@ -473,7 +449,7 @@
 			this.richTextBox15.BackColor = System.Drawing.Color.Black;
 			this.richTextBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox15.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox15.Location = new System.Drawing.Point(308, 197);
 			this.richTextBox15.Name = "richTextBox15";
 			this.richTextBox15.ReadOnly = true;
@@ -487,7 +463,7 @@
 			this.richTextBox16.BackColor = System.Drawing.Color.Black;
 			this.richTextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox16.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox16.Location = new System.Drawing.Point(68, 197);
 			this.richTextBox16.Name = "richTextBox16";
 			this.richTextBox16.ReadOnly = true;
@@ -501,7 +477,7 @@
 			this.richTextBox17.BackColor = System.Drawing.Color.Black;
 			this.richTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox17.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox17.Location = new System.Drawing.Point(548, 148);
 			this.richTextBox17.Name = "richTextBox17";
 			this.richTextBox17.ReadOnly = true;
@@ -515,7 +491,7 @@
 			this.richTextBox18.BackColor = System.Drawing.Color.Black;
 			this.richTextBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox18.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox18.Location = new System.Drawing.Point(308, 148);
 			this.richTextBox18.Name = "richTextBox18";
 			this.richTextBox18.ReadOnly = true;
@@ -529,7 +505,7 @@
 			this.richTextBox19.BackColor = System.Drawing.Color.Black;
 			this.richTextBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox19.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox19.Location = new System.Drawing.Point(68, 148);
 			this.richTextBox19.Name = "richTextBox19";
 			this.richTextBox19.ReadOnly = true;
@@ -543,7 +519,7 @@
 			this.richTextBox20.BackColor = System.Drawing.Color.Black;
 			this.richTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox20.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox20.Location = new System.Drawing.Point(548, 99);
 			this.richTextBox20.Name = "richTextBox20";
 			this.richTextBox20.ReadOnly = true;
@@ -557,7 +533,7 @@
 			this.richTextBox21.BackColor = System.Drawing.Color.Black;
 			this.richTextBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox21.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox21.Location = new System.Drawing.Point(308, 99);
 			this.richTextBox21.Name = "richTextBox21";
 			this.richTextBox21.ReadOnly = true;
@@ -571,7 +547,7 @@
 			this.richTextBox22.BackColor = System.Drawing.Color.Black;
 			this.richTextBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox22.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox22.Location = new System.Drawing.Point(68, 99);
 			this.richTextBox22.Name = "richTextBox22";
 			this.richTextBox22.ReadOnly = true;
@@ -585,7 +561,7 @@
 			this.richTextBox23.BackColor = System.Drawing.Color.Black;
 			this.richTextBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox23.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox23.Location = new System.Drawing.Point(548, 50);
 			this.richTextBox23.Name = "richTextBox23";
 			this.richTextBox23.ReadOnly = true;
@@ -599,7 +575,7 @@
 			this.richTextBox24.BackColor = System.Drawing.Color.Black;
 			this.richTextBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox24.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox24.Location = new System.Drawing.Point(308, 50);
 			this.richTextBox24.Name = "richTextBox24";
 			this.richTextBox24.ReadOnly = true;
@@ -613,7 +589,7 @@
 			this.richTextBox25.BackColor = System.Drawing.Color.Black;
 			this.richTextBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox25.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox25.Location = new System.Drawing.Point(68, 50);
 			this.richTextBox25.Name = "richTextBox25";
 			this.richTextBox25.ReadOnly = true;
@@ -621,6 +597,30 @@
 			this.richTextBox25.Size = new System.Drawing.Size(234, 49);
 			this.richTextBox25.TabIndex = 25;
 			this.richTextBox25.Text = " 0";
+			// 
+			// tabPage5
+			// 
+			this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.tabPage5.Controls.Add(this.label8);
+			this.tabPage5.Controls.Add(this.label9);
+			this.tabPage5.Controls.Add(this.label10);
+			this.tabPage5.Controls.Add(this.richTextBox26);
+			this.tabPage5.Controls.Add(this.richTextBox27);
+			this.tabPage5.Controls.Add(this.richTextBox28);
+			this.tabPage5.Controls.Add(this.richTextBox29);
+			this.tabPage5.Controls.Add(this.richTextBox30);
+			this.tabPage5.Controls.Add(this.richTextBox31);
+			this.tabPage5.Controls.Add(this.richTextBox32);
+			this.tabPage5.Controls.Add(this.richTextBox33);
+			this.tabPage5.Controls.Add(this.richTextBox34);
+			this.tabPage5.Controls.Add(this.richTextBox35);
+			this.tabPage5.Controls.Add(this.richTextBox36);
+			this.tabPage5.Controls.Add(this.richTextBox37);
+			this.tabPage5.Location = new System.Drawing.Point(4, 25);
+			this.tabPage5.Name = "tabPage5";
+			this.tabPage5.Size = new System.Drawing.Size(850, 265);
+			this.tabPage5.TabIndex = 3;
+			this.tabPage5.Text = "variant3";
 			// 
 			// label8
 			// 
@@ -660,7 +660,7 @@
 			this.richTextBox26.BackColor = System.Drawing.Color.Black;
 			this.richTextBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox26.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox26.Location = new System.Drawing.Point(548, 197);
 			this.richTextBox26.Name = "richTextBox26";
 			this.richTextBox26.ReadOnly = true;
@@ -674,7 +674,7 @@
 			this.richTextBox27.BackColor = System.Drawing.Color.Black;
 			this.richTextBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox27.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox27.Location = new System.Drawing.Point(308, 197);
 			this.richTextBox27.Name = "richTextBox27";
 			this.richTextBox27.ReadOnly = true;
@@ -688,7 +688,7 @@
 			this.richTextBox28.BackColor = System.Drawing.Color.Black;
 			this.richTextBox28.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox28.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox28.Location = new System.Drawing.Point(68, 197);
 			this.richTextBox28.Name = "richTextBox28";
 			this.richTextBox28.ReadOnly = true;
@@ -702,7 +702,7 @@
 			this.richTextBox29.BackColor = System.Drawing.Color.Black;
 			this.richTextBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox29.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox29.Location = new System.Drawing.Point(548, 148);
 			this.richTextBox29.Name = "richTextBox29";
 			this.richTextBox29.ReadOnly = true;
@@ -716,7 +716,7 @@
 			this.richTextBox30.BackColor = System.Drawing.Color.Black;
 			this.richTextBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox30.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox30.Location = new System.Drawing.Point(308, 148);
 			this.richTextBox30.Name = "richTextBox30";
 			this.richTextBox30.ReadOnly = true;
@@ -730,7 +730,7 @@
 			this.richTextBox31.BackColor = System.Drawing.Color.Black;
 			this.richTextBox31.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox31.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox31.Location = new System.Drawing.Point(68, 148);
 			this.richTextBox31.Name = "richTextBox31";
 			this.richTextBox31.ReadOnly = true;
@@ -744,7 +744,7 @@
 			this.richTextBox32.BackColor = System.Drawing.Color.Black;
 			this.richTextBox32.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox32.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox32.Location = new System.Drawing.Point(548, 99);
 			this.richTextBox32.Name = "richTextBox32";
 			this.richTextBox32.ReadOnly = true;
@@ -758,7 +758,7 @@
 			this.richTextBox33.BackColor = System.Drawing.Color.Black;
 			this.richTextBox33.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox33.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox33.Location = new System.Drawing.Point(308, 99);
 			this.richTextBox33.Name = "richTextBox33";
 			this.richTextBox33.ReadOnly = true;
@@ -772,7 +772,7 @@
 			this.richTextBox34.BackColor = System.Drawing.Color.Black;
 			this.richTextBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox34.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox34.Location = new System.Drawing.Point(68, 99);
 			this.richTextBox34.Name = "richTextBox34";
 			this.richTextBox34.ReadOnly = true;
@@ -786,7 +786,7 @@
 			this.richTextBox35.BackColor = System.Drawing.Color.Black;
 			this.richTextBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox35.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox35.Location = new System.Drawing.Point(548, 50);
 			this.richTextBox35.Name = "richTextBox35";
 			this.richTextBox35.ReadOnly = true;
@@ -800,7 +800,7 @@
 			this.richTextBox36.BackColor = System.Drawing.Color.Black;
 			this.richTextBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox36.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox36.Location = new System.Drawing.Point(308, 50);
 			this.richTextBox36.Name = "richTextBox36";
 			this.richTextBox36.ReadOnly = true;
@@ -814,7 +814,7 @@
 			this.richTextBox37.BackColor = System.Drawing.Color.Black;
 			this.richTextBox37.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.richTextBox37.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+			this.richTextBox37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
 			this.richTextBox37.Location = new System.Drawing.Point(68, 50);
 			this.richTextBox37.Name = "richTextBox37";
 			this.richTextBox37.ReadOnly = true;

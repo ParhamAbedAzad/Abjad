@@ -37,6 +37,9 @@ namespace Abjad.Code
 			{
 				for (int j = 0; j <= colNum; j++)
 				{
+					vHolder = 0;
+					nvHolder = 0;
+					rvHolder = 0;
 					if (Table[i][j]==0)
 					{
 						vHolder = 0;
@@ -58,7 +61,7 @@ namespace Abjad.Code
 					
 					Scores[i] += vHolder;
 					NazirScores[i] += nvHolder;
-					ReverseScores[i] +=rvHolder;
+					ReverseScores[i] += rvHolder;
 
 				}
 			}
