@@ -15,7 +15,7 @@ namespace Abjad.Code
         public char NaCharacter { get; set; }
 		public int NaValues { get; set; }
 
-		public Rows(char character, char reCharacter,char naCharacter)
+		public Rows(char character,char naCharacter, char reCharacter)
 		{
             this.Character = character;
 			this.ReCharacter = reCharacter;
