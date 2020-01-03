@@ -124,7 +124,7 @@
 			this.button1.Location = new System.Drawing.Point(12, 11);
 			this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(157, 54);
+			this.button1.Size = new System.Drawing.Size(167, 60);
 			this.button1.TabIndex = 2;
 			this.button1.Text = "Start";
 			this.button1.UseVisualStyleBackColor = false;
@@ -627,7 +627,7 @@
 			this.label8.AutoSize = true;
 			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label8.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.label8.Location = new System.Drawing.Point(611, 19);
+			this.label8.Location = new System.Drawing.Point(609, 19);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(112, 29);
 			this.label8.TabIndex = 26;
@@ -638,7 +638,7 @@
 			this.label9.AutoSize = true;
 			this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label9.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.label9.Location = new System.Drawing.Point(381, 19);
+			this.label9.Location = new System.Drawing.Point(397, 19);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(56, 29);
 			this.label9.TabIndex = 27;
@@ -649,7 +649,7 @@
 			this.label10.AutoSize = true;
 			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label10.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.label10.Location = new System.Drawing.Point(128, 19);
+			this.label10.Location = new System.Drawing.Point(153, 19);
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(65, 29);
 			this.label10.TabIndex = 28;
