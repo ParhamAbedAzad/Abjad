@@ -23,6 +23,7 @@ namespace Abjad
 
 		private void button1_Click_1(object sender, EventArgs e)
 		{
+
 			try
 			{
 				String input = checkAndTrimInput();
@@ -355,7 +356,8 @@ namespace Abjad
 		private void button2_Click(object sender, EventArgs e)
 		{
 			Data data = new Data();
-			data.Show();
+			data.ShowDialog();
+			//ShowDialog instead of Show did the trick
 		}
 	}
 }
