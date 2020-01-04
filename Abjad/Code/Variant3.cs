@@ -38,21 +38,29 @@ namespace Abjad.Code
                     j++;
                 }
             }
+
+            CopyToMid(MidTable, Table, length);
+            CopyToMid(MidReverseTable, ReverseTable, length);
+            CopyToMid(MidNazirTable, NazirTable, length);
+            FillScoreTables(length);
+        }
+
+        private void CopyToMid(char[][] MidTable, char[][] Table, int length)
+        {
             MidTable[0] = Table[0];
             MidTable[1] = Table[3];
             Array.Reverse(MidTable[1], 0, (length / 4 + (length % 4 > 2 ? 1 : 0)));
             MidTable[2] = Table[1];
             MidTable[3] = Table[2];
             Array.Reverse(MidTable[3], 0, (length / 4 + (length % 4 > 1 ? 1 : 0)));
-            FillScoreTables(length);
         }
-
         private void AddToTables(int i, int j, char currentChar)
         {
             Table[j][i] = currentChar;
             ReverseTable[j][i] = MapTable.MapRow3[currentChar].ReCharacter;
+            NazirTable[j][i] = MapTable.MapRow2[currentChar].NaCharacter;
             //Scores[j] += MapTable.Map[currentChar].SmallValues;
-            ReverseScores[j] += MapTable.MapRow3[currentChar].ReValues;
+           // ReverseScores[j] += MapTable.MapRow3[currentChar].ReValues;
 
 
         }
@@ -74,6 +82,9 @@ namespace Abjad.Code
                     if (MidTable[j][i] != 0)
                     {
                         Scores[k] += MapTable.MapRow3[MidTable[j][i]].Values;
+                        ReverseScores[k] += MapTable.MapRow2[MidTable[j][i]].ReValues;
+                        NazirScores[k] += MapTable.MapRow2[MidTable[j][i]].NaValues;
+
                     }
                     else
                     {
