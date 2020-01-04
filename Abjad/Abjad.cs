@@ -124,7 +124,7 @@ namespace Abjad
 			richTextBox11.Text = "0";
 			richTextBox12.Text = "0";
 			richTextBox13.Text = "0";
-			//var2			   = "0";
+			//var2			  
 			richTextBox25.Text = "0";
 			richTextBox22.Text = "0";
 			richTextBox19.Text = "0";
@@ -137,7 +137,7 @@ namespace Abjad
 			richTextBox20.Text = "0";
 			richTextBox17.Text = "0";
 			richTextBox14.Text = "0";
-			//var3			   = "0";
+			//var3			   
 			richTextBox37.Text = "0";
 			richTextBox34.Text = "0";
 			richTextBox31.Text = "0";
