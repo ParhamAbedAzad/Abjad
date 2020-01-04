@@ -11,7 +11,6 @@ namespace Abjad.Code
 {
 	class Variant1 : Variant
 	{
-
 		public Variant1() : base()
 		{
 		}
@@ -40,7 +39,7 @@ namespace Abjad.Code
 					vHolder = 0;
 					nvHolder = 0;
 					rvHolder = 0;
-					if (Table[i][j]==0)
+					if (Table[i][j] == 0)
 					{
 						vHolder = 0;
 					}
@@ -48,21 +47,19 @@ namespace Abjad.Code
 					{
 						try
 						{
-
 							vHolder = MapTable.MapRow1[Table[i][j]].Values;
 							nvHolder = MapTable.MapRow1[Table[i][j]].NaValues;
 							rvHolder = MapTable.MapRow1[Table[i][j]].ReValues;
 						}
 						catch (Exception e)
 						{
-							throw new Exception("value \""+Table[i][j]+"\" not present in Dictionary");
+							throw new Exception("value \"" + Table[i][j] + "\" not present in Dictionary");
 						}
 					}
-					
+
 					Scores[i] += vHolder;
 					NazirScores[i] += nvHolder;
 					ReverseScores[i] += rvHolder;
-
 				}
 			}
 		}
@@ -83,7 +80,7 @@ namespace Abjad.Code
 				odd = true;
 			}
 
-			int i,j;
+			int i, j;
 			int i2 = 0, j2 = 0;
 			for (i = 0; i < 4; i++)
 			{
@@ -115,7 +112,7 @@ namespace Abjad.Code
 				{
 					fraction--;
 				}
-				else if(fraction==1)
+				else if (fraction == 1)
 				{
 					fraction--;
 					partitionSize--;
@@ -129,32 +126,29 @@ namespace Abjad.Code
 		{
 			char currentChar;
 			int length = input.Length;
-			int middle = length / 2 + (length % 2); 
-			
-				int i = 0;
-				int j = 0;
-				for (int cn = 0; cn < middle; cn++)
-				{
-					currentChar = input[cn];
-					MidTable[i][j] = currentChar;
-					++j;
-				}
+			int middle = length / 2 + (length % 2);
+			int i = 0;
+			int j = 0;
+			for (int cn = 0; cn < middle; cn++)
+			{
+				currentChar = input[cn];
+				MidTable[i][j] = currentChar;
+				++j;
+			}
 
-				string substring = input.Substring(middle);
-				string inputReverse = new string(substring.Reverse().ToArray());
-				//that was wrong buddy :) 
-				//stfu bitch
-				//yours didn't work too bro :\
-				i = 1;
-				j = 0;
-				for (int cn = 0; cn < length / 2; cn++)
-				{
-					currentChar = inputReverse[cn];
-					MidTable[i][j] = currentChar;
-					++j;
-				}
-			
-			
+			string substring = input.Substring(middle);
+			string inputReverse = new string(substring.Reverse().ToArray());
+			//that was wrong buddy :) 
+			//stfu bitch
+			//yours didn't work too bro :\
+			i = 1;
+			j = 0;
+			for (int cn = 0; cn < length / 2; cn++)
+			{
+				currentChar = inputReverse[cn];
+				MidTable[i][j] = currentChar;
+				++j;
+			}
 		}
 	}
 }

@@ -15,6 +15,7 @@ namespace Abjad
 	{
 		private const string PLACE_HOLDER = "enter text here...";
 		Data data = new Data();
+
 		public AbjadMainForm()
 		{
 			InitializeComponent();
@@ -23,7 +24,6 @@ namespace Abjad
 
 		private void button1_Click_1(object sender, EventArgs e)
 		{
-			
 			try
 			{
 				ResetTextBoxes();
@@ -108,22 +108,23 @@ namespace Abjad
 			richTextBox29.Text = variant3.ReverseScores[2].ToString();
 			richTextBox26.Text = variant3.ReverseScores[3].ToString();
 		}
+
 		private void ResetTextBoxes()
 		{
 			//var1
-			richTextBox2.Text  = "0";
-			richTextBox3.Text  = "0";
-			richTextBox4.Text  = "0";
-			richTextBox5.Text  = "0";
-			richTextBox6.Text  = "0";
-			richTextBox7.Text  = "0";
-			richTextBox8.Text  = "0";
-			richTextBox9.Text  = "0";
+			richTextBox2.Text = "0";
+			richTextBox3.Text = "0";
+			richTextBox4.Text = "0";
+			richTextBox5.Text = "0";
+			richTextBox6.Text = "0";
+			richTextBox7.Text = "0";
+			richTextBox8.Text = "0";
+			richTextBox9.Text = "0";
 			richTextBox10.Text = "0";
 			richTextBox11.Text = "0";
 			richTextBox12.Text = "0";
 			richTextBox13.Text = "0";
-			//var2			   = "0";
+			//var2			  
 			richTextBox25.Text = "0";
 			richTextBox22.Text = "0";
 			richTextBox19.Text = "0";
@@ -136,7 +137,7 @@ namespace Abjad
 			richTextBox20.Text = "0";
 			richTextBox17.Text = "0";
 			richTextBox14.Text = "0";
-			//var3			   = "0";
+			//var3			   
 			richTextBox37.Text = "0";
 			richTextBox34.Text = "0";
 			richTextBox31.Text = "0";
@@ -400,13 +401,13 @@ namespace Abjad
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-			if(!data.IsDisposed)
-				data.Show();
+			if (!data.IsDisposed) data.Show();
 			else
 			{
 				data = new Data();
 				data.Show();
 			}
+
 			//scratch that reworked it for the 3rd time now it works perfectly
 		}
 
@@ -415,21 +416,22 @@ namespace Abjad
 			button1.ForeColor = Color.FromArgb(255, 138, 0);
 			button1.BackColor = Color.FromArgb(33, 33, 33);
 		}
+
 		private void b1leave(object sender, EventArgs e)
 		{
-			button1.ForeColor = Color.FromArgb(0,0,0);
-
+			button1.ForeColor = Color.FromArgb(0, 0, 0);
 			button1.BackColor = Color.FromArgb(255, 138, 0);
 		}
+
 		private void b2enter(object sender, EventArgs e)
 		{
 			button2.ForeColor = Color.FromArgb(255, 138, 0);
-			button2.BackColor = Color.FromArgb(33,33,33);
+			button2.BackColor = Color.FromArgb(33, 33, 33);
 		}
+
 		private void b2leave(object sender, EventArgs e)
 		{
 			button2.ForeColor = Color.FromArgb(0, 0, 0);
-
 			button2.BackColor = Color.FromArgb(255, 138, 0);
 		}
 	}
