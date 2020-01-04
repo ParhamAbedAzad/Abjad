@@ -10,7 +10,7 @@ namespace Abjad.Code
     {
         public static Dictionary<char, int> MapScore { get; set; } = new Dictionary<char, int>()
         {
-            {'a',1},
+            { 'a',1},
             {'u',21},
             {'b',2},
             {'v',22},

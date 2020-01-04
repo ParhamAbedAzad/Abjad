@@ -97,8 +97,12 @@
 			this.richTextBox1.Location = new System.Drawing.Point(199, 11);
 			this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox1.Name = "richTextBox1";
-			this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+#if (Release || DEBUG)
+            this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+#elif(ReleaseFarsi)
+                this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+#endif
+            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
 			this.richTextBox1.Size = new System.Drawing.Size(853, 239);
 			this.richTextBox1.TabIndex = 0;
 			this.richTextBox1.Text = "";
@@ -911,7 +915,7 @@
 
 		}
 
-		#endregion
+#endregion
 
 		private System.Windows.Forms.RichTextBox richTextBox1;
 		private System.Windows.Forms.Label label1;
