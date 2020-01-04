@@ -412,21 +412,25 @@ namespace Abjad
 
 		private void b1enter(object sender, EventArgs e)
 		{
-			button1.ForeColor = Color.FromArgb(200,200,200);
-			return;
+			button1.ForeColor = Color.FromArgb(255, 138, 0);
+			button1.BackColor = Color.FromArgb(33, 33, 33);
 		}
 		private void b1leave(object sender, EventArgs e)
 		{
 			button1.ForeColor = Color.FromArgb(0,0,0);
-			return;
+
+			button1.BackColor = Color.FromArgb(255, 138, 0);
 		}
 		private void b2enter(object sender, EventArgs e)
 		{
-			button2.ForeColor = Color.FromArgb(200,200,200);
+			button2.ForeColor = Color.FromArgb(255, 138, 0);
+			button2.BackColor = Color.FromArgb(33,33,33);
 		}
 		private void b2leave(object sender, EventArgs e)
 		{
 			button2.ForeColor = Color.FromArgb(0, 0, 0);
+
+			button2.BackColor = Color.FromArgb(255, 138, 0);
 		}
 	}
 }
