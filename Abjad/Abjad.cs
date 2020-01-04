@@ -27,6 +27,7 @@ namespace Abjad
 
 		private void button1_Click_1(object sender, EventArgs e)
 		{
+            
 			try
 			{
 				String input = checkAndTrimInput();
@@ -250,5 +251,16 @@ namespace Abjad
 				richTextBox13.DeselectAll();
 			}
 		}
-	}
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Data data = new Data();
+            data.Show();
+        }
+    }
 }
