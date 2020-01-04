@@ -14,7 +14,7 @@ namespace Abjad
 	public partial class AbjadMainForm : Form
 	{
 		private const string PLACE_HOLDER = "enter text here...";
-
+		Data data = new Data();
 		public AbjadMainForm()
 		{
 			InitializeComponent();
@@ -355,9 +355,14 @@ namespace Abjad
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-			Data data = new Data();
-			data.ShowDialog();
-			//ShowDialog instead of Show did the trick
+			if(!data.IsDisposed)
+				data.Show();
+			else
+			{
+				data = new Data();
+				data.Show();
+			}
+			//scratch that reworked it for the 3rd time now it works perfectly
 		}
 	}
 }
