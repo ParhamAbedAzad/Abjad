@@ -233,7 +233,7 @@ namespace Abjad.Code
             {'z',new Rows('z','m','a')},
 #elif (ReleaseFarsi)
             {'ق',new Rows('ق','ج','ف')},
-            {'ن',new Rows('ن','پ','ع')},
+            {'ن',new Rows('ن','چ','ع')},
             {'ر',new Rows('ر','د','ص')},
             {'م',new Rows('م','پ','س')},
             {'ث',new Rows('ث','ز','ش')},
