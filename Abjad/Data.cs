@@ -19,19 +19,15 @@ namespace Abjad
             InitializeComponent();
             int k = 0;
             Char current = 'A';
-            Label text = new Label();
             for (int rowCount=0; rowCount < tableLayoutPanel4.RowCount; rowCount++)
             {
                 for (int colCount = 0;colCount < tableLayoutPanel4.ColumnCount;colCount++)
                 {
                     if (colCount % 2 == 1)
                     {
-                        text = new Label();
-                        text.TextAlign = ContentAlignment.MiddleCenter;
-                        text.Text = MapTable.MapScore[Char.ToLower(current)].ToString();
+                        Control ctr = newIntLable(current);
                         current++;
                         k++;
-                        Control ctr = text;
                         tableLayoutPanel4.Controls.Add(ctr, colCount, rowCount);
                         if (k >= LangNum)
                         {
@@ -40,16 +36,30 @@ namespace Abjad
                     }
                     else
                     {
-
-                        text = new Label();
-                        text.TextAlign = ContentAlignment.MiddleCenter;
-                        text.Text = current.ToString();
-                        Control ctr = text;
+                        Control ctr = newLable(current);
                         tableLayoutPanel4.Controls.Add(ctr,colCount,rowCount);
                     }
                 }
             }
-
+            Char i = 'A';
+            for (int colCount = 0; colCount < tableLayoutPanel1.ColumnCount; colCount++,i++)
+            {
+                tableLayoutPanel1.Controls.Add(newLable(Char.ToUpper(i)),colCount,0);
+                tableLayoutPanel2.Controls.Add(newLable(Char.ToUpper(i)),colCount,0);
+                tableLayoutPanel3.Controls.Add(newLable(Char.ToUpper(i)),colCount,0);
+                current = MapTable.MapRow1[Char.ToLower(i)].NaCharacter;
+                tableLayoutPanel1.Controls.Add(newLable(Char.ToUpper(current)), colCount, 1);
+                current = MapTable.MapRow2[Char.ToLower(i)].NaCharacter;
+                tableLayoutPanel2.Controls.Add(newLable(Char.ToUpper(current)), colCount, 1);
+                current = MapTable.MapRow3[Char.ToLower(i)].NaCharacter;
+                tableLayoutPanel3.Controls.Add(newLable(Char.ToUpper(current)), colCount, 1);
+                current = MapTable.MapRow1[Char.ToLower(i)].ReCharacter;
+                tableLayoutPanel1.Controls.Add(newLable(Char.ToUpper(current)), colCount, 2);
+                current = MapTable.MapRow2[Char.ToLower(i)].ReCharacter;
+                tableLayoutPanel2.Controls.Add(newLable(Char.ToUpper(current)), colCount, 2);
+                current = MapTable.MapRow3[Char.ToLower(i)].ReCharacter;
+                tableLayoutPanel3.Controls.Add(newLable(Char.ToUpper(current)), colCount, 2);
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -65,6 +75,20 @@ namespace Abjad
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        private Label newLable(char current)
+        {
+            Label text = new Label();
+            text.TextAlign = ContentAlignment.MiddleCenter;
+            text.Text = current.ToString();
+            return text;
+        }
+        private Label newIntLable(char current)
+        {
+            Label text = new Label();
+            text.TextAlign = ContentAlignment.MiddleCenter;
+            text.Text = MapTable.MapScore[Char.ToLower(current)].ToString();
+            return text;
         }
     }
 }

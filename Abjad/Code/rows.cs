@@ -17,12 +17,12 @@ namespace Abjad.Code
 
 		public Rows(char character,char naCharacter, char reCharacter)
 		{
-            this.Character = character;
-			this.ReCharacter = reCharacter;
-			this.ReCharacter = naCharacter;
-			this.Values = MapTable.MapScore[Character];
-			this.ReValues = MapTable.MapScore[reCharacter];
-			this.NaValues = MapTable.MapScore[naCharacter];
+            Character = character;
+			ReCharacter = reCharacter;
+			NaCharacter = naCharacter;
+			Values = MapTable.MapScore[Character];
+			ReValues = MapTable.MapScore[reCharacter];
+			NaValues = MapTable.MapScore[naCharacter];
 		}
 	}
 }
