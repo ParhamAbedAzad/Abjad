@@ -23,9 +23,11 @@ namespace Abjad
 
 		private void button1_Click_1(object sender, EventArgs e)
 		{
-
+			
 			try
 			{
+				ResetTextBoxes();
+				AlignCenterAll();
 				String input = checkAndTrimInput();
 				Variant1 variant1 = new Variant1();
 				Variant2 variant2 = new Variant2();
@@ -106,6 +108,48 @@ namespace Abjad
 			richTextBox29.Text = variant3.ReverseScores[2].ToString();
 			richTextBox26.Text = variant3.ReverseScores[3].ToString();
 		}
+		private void ResetTextBoxes()
+		{
+			//var1
+			richTextBox2.Text  = "0";
+			richTextBox3.Text  = "0";
+			richTextBox4.Text  = "0";
+			richTextBox5.Text  = "0";
+			richTextBox6.Text  = "0";
+			richTextBox7.Text  = "0";
+			richTextBox8.Text  = "0";
+			richTextBox9.Text  = "0";
+			richTextBox10.Text = "0";
+			richTextBox11.Text = "0";
+			richTextBox12.Text = "0";
+			richTextBox13.Text = "0";
+			//var2			   = "0";
+			richTextBox25.Text = "0";
+			richTextBox22.Text = "0";
+			richTextBox19.Text = "0";
+			richTextBox16.Text = "0";
+			richTextBox24.Text = "0";
+			richTextBox21.Text = "0";
+			richTextBox18.Text = "0";
+			richTextBox15.Text = "0";
+			richTextBox23.Text = "0";
+			richTextBox20.Text = "0";
+			richTextBox17.Text = "0";
+			richTextBox14.Text = "0";
+			//var3			   = "0";
+			richTextBox37.Text = "0";
+			richTextBox34.Text = "0";
+			richTextBox31.Text = "0";
+			richTextBox28.Text = "0";
+			richTextBox36.Text = "0";
+			richTextBox33.Text = "0";
+			richTextBox30.Text = "0";
+			richTextBox27.Text = "0";
+			richTextBox35.Text = "0";
+			richTextBox32.Text = "0";
+			richTextBox29.Text = "0";
+			richTextBox26.Text = "0";
+		}
 
 		private void Label1_Click(object sender, EventArgs e)
 		{
@@ -152,6 +196,7 @@ namespace Abjad
 
 			input = richTextBox1.Text.Replace(" ", "");
 			input = input.Replace("\n", "");
+			input = input.ToLower();
 			if (input == "")
 			{
 				throw new NoNullAllowedException("enter the text first (only white space and Enter are not text)");
@@ -363,6 +408,25 @@ namespace Abjad
 				data.Show();
 			}
 			//scratch that reworked it for the 3rd time now it works perfectly
+		}
+
+		private void b1enter(object sender, EventArgs e)
+		{
+			button1.ForeColor = Color.FromArgb(200,200,200);
+			return;
+		}
+		private void b1leave(object sender, EventArgs e)
+		{
+			button1.ForeColor = Color.FromArgb(0,0,0);
+			return;
+		}
+		private void b2enter(object sender, EventArgs e)
+		{
+			button2.ForeColor = Color.FromArgb(200,200,200);
+		}
+		private void b2leave(object sender, EventArgs e)
+		{
+			button2.ForeColor = Color.FromArgb(0, 0, 0);
 		}
 	}
 }

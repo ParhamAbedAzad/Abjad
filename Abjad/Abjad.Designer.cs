@@ -130,6 +130,8 @@
 			this.button1.Text = "Start";
 			this.button1.UseVisualStyleBackColor = false;
 			this.button1.Click += new System.EventHandler(this.button1_Click_1);
+			this.button1.MouseEnter += new System.EventHandler(this.b1enter);
+			this.button1.MouseLeave += new System.EventHandler(this.b1leave);
 			// 
 			// tabControl1
 			// 
@@ -878,6 +880,8 @@
 			this.button2.Text = "Tables";
 			this.button2.UseVisualStyleBackColor = false;
 			this.button2.Click += new System.EventHandler(this.button2_Click);
+			this.button2.MouseEnter += new System.EventHandler(this.b2enter);
+			this.button2.MouseLeave += new System.EventHandler(this.b2leave);
 			// 
 			// AbjadMainForm
 			// 
