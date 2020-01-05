@@ -13,66 +13,60 @@ namespace Abjad
 {
     public partial class Data : Form
     {
-        private const int LangNum = 32;
+        private const int LangNum = 25;
         public Data()
         {
             InitializeComponent();
-            int k = 0;
+			char[] alpha =
+			{
+				'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'
+			};
+			char[] var1 = { 'a', 'z', 'b', 'y', 'c', 'x', 'd', 'w', 'e', 'v', 'f', 'u', 'g'};
+			char[] var2 = { 'a', 'u', 'b', 'v', 'h', 't', 'g', 's', 'i', 'm', 'j', 'n', 'p'};
+			char[] var3 = { 'a', 'x', 'b', 'w', 'e', 't', 'f', 's', 'i', 'p', 'j', 'o', 'm'};
 
-	        Char current = 'a';
-
-
-            for (int rowCount=0; rowCount < tableLayoutPanel4.RowCount; rowCount++)
+			int j = 0;
+			for (int rowCount=0; rowCount < tableLayoutPanel4.RowCount; rowCount++)
             {
                 for (int colCount = 0;colCount < tableLayoutPanel4.ColumnCount;colCount++)
                 {
-                    if (colCount % 2 == 1)
-                    {
-                        Control ctr = newIntLable(current);
-                        current++;
-                        k++;
-                        tableLayoutPanel4.Controls.Add(ctr, colCount, rowCount);
-                        if (k >= LangNum)
-                        {
-                            break;
-                        }
-                    }
-                    else
-                    {
-                        while (!MapTable.MapScore.ContainsKey(current))
-                        {
-                            current++;
-                        }
-                        Control ctr = newLable(current);
-                        tableLayoutPanel4.Controls.Add(ctr,colCount,rowCount);
-                    }
-                }
+					if (colCount % 2 == 0)
+					{
+						if (j > LangNum)
+							break;
+						Control ctr = newLable(alpha[j]);
+						tableLayoutPanel4.Controls.Add(ctr, colCount, rowCount);
+					}
+					else
+					{
+						Control ctr = newIntLable(alpha[j]);
+						tableLayoutPanel4.Controls.Add(ctr, colCount, rowCount);
+						j++;
+						if(j>LangNum)
+							break;
+					}
+				}
             }
-            Char i = 'a';
-
-            for (int colCount = 0; colCount < tableLayoutPanel1.ColumnCount; colCount++,i++)
-            {
-                while (!MapTable.MapScore.ContainsKey(i))
-                {
-                    i++;
-                }
-                tableLayoutPanel1.Controls.Add(newLable(i),colCount,0);
-                tableLayoutPanel2.Controls.Add(newLable(i),colCount,0);
-                tableLayoutPanel3.Controls.Add(newLable(i),colCount,0);
-                current = MapTable.MapRow1[i].NaCharacter;
-                tableLayoutPanel1.Controls.Add(newLable(current), colCount, 1);
-                current = MapTable.MapRow2[i].NaCharacter;
-                tableLayoutPanel2.Controls.Add(newLable(current), colCount, 1);
-                current = MapTable.MapRow3[i].NaCharacter;
-                tableLayoutPanel3.Controls.Add(newLable(current), colCount, 1);
-                current = MapTable.MapRow1[i].ReCharacter;
-                tableLayoutPanel1.Controls.Add(newLable(current), colCount, 2);
-                current = MapTable.MapRow2[i].ReCharacter;
-                tableLayoutPanel2.Controls.Add(newLable(Char.ToUpper(current)), colCount, 2);
-                current = MapTable.MapRow3[i].ReCharacter;
-                tableLayoutPanel3.Controls.Add(newLable(Char.ToUpper(current)), colCount, 2);
-            }
-        }
+			Char current;
+			for (int colCount = 0; colCount < tableLayoutPanel1.ColumnCount; colCount++)
+			{
+				tableLayoutPanel1.Controls.Add(newLable(var1[colCount]), colCount, 0);
+				tableLayoutPanel2.Controls.Add(newLable(var2[colCount]), colCount, 0);
+				tableLayoutPanel3.Controls.Add(newLable(var3[colCount]), colCount, 0);
+				current = MapTable.MapRow1[var1[colCount]].NaCharacter;
+				tableLayoutPanel1.Controls.Add(newLable(current), colCount, 1);
+				current = MapTable.MapRow2[var2[colCount]].NaCharacter;
+				tableLayoutPanel2.Controls.Add(newLable(current), colCount, 1);
+				current = MapTable.MapRow3[var3[colCount]].NaCharacter;
+				tableLayoutPanel3.Controls.Add(newLable(current), colCount, 1);
+				current = MapTable.MapRow1[var1[colCount]].ReCharacter;
+				tableLayoutPanel1.Controls.Add(newLable(current), colCount, 2);
+				current = MapTable.MapRow2[var2[colCount]].ReCharacter;
+				tableLayoutPanel2.Controls.Add(newLable(current), colCount, 2);
+				current = MapTable.MapRow3[var3[colCount]].ReCharacter;
+				tableLayoutPanel3.Controls.Add(newLable(current), colCount, 2);
+			}
+		}
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
