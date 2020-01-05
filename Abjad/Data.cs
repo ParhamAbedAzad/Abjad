@@ -13,12 +13,16 @@ namespace Abjad
 {
     public partial class Data : Form
     {
-        private const int LangNum = 26;
+        private const int LangNum = 32;
         public Data()
         {
             InitializeComponent();
             int k = 0;
-            Char current = 'A';
+#if (DEBUG || Release)
+                Char current = 'a';
+#elif (ReleaseFarsi)
+            Char current = 'ا';
+#endif
             for (int rowCount=0; rowCount < tableLayoutPanel4.RowCount; rowCount++)
             {
                 for (int colCount = 0;colCount < tableLayoutPanel4.ColumnCount;colCount++)
@@ -36,28 +40,40 @@ namespace Abjad
                     }
                     else
                     {
+                        while (!MapTable.MapScore.ContainsKey(current))
+                        {
+                            current++;
+                        }
                         Control ctr = newLable(current);
                         tableLayoutPanel4.Controls.Add(ctr,colCount,rowCount);
                     }
                 }
             }
-            Char i = 'A';
+#if (DEBUG || Release)
+            Char i = 'a';
+#elif(ReleaseFarsi)
+            Char i = 'ا';
+#endif
             for (int colCount = 0; colCount < tableLayoutPanel1.ColumnCount; colCount++,i++)
             {
-                tableLayoutPanel1.Controls.Add(newLable(Char.ToUpper(i)),colCount,0);
-                tableLayoutPanel2.Controls.Add(newLable(Char.ToUpper(i)),colCount,0);
-                tableLayoutPanel3.Controls.Add(newLable(Char.ToUpper(i)),colCount,0);
-                current = MapTable.MapRow1[Char.ToLower(i)].NaCharacter;
-                tableLayoutPanel1.Controls.Add(newLable(Char.ToUpper(current)), colCount, 1);
-                current = MapTable.MapRow2[Char.ToLower(i)].NaCharacter;
-                tableLayoutPanel2.Controls.Add(newLable(Char.ToUpper(current)), colCount, 1);
-                current = MapTable.MapRow3[Char.ToLower(i)].NaCharacter;
-                tableLayoutPanel3.Controls.Add(newLable(Char.ToUpper(current)), colCount, 1);
-                current = MapTable.MapRow1[Char.ToLower(i)].ReCharacter;
-                tableLayoutPanel1.Controls.Add(newLable(Char.ToUpper(current)), colCount, 2);
-                current = MapTable.MapRow2[Char.ToLower(i)].ReCharacter;
+                while (!MapTable.MapScore.ContainsKey(i))
+                {
+                    i++;
+                }
+                tableLayoutPanel1.Controls.Add(newLable(i),colCount,0);
+                tableLayoutPanel2.Controls.Add(newLable(i),colCount,0);
+                tableLayoutPanel3.Controls.Add(newLable(i),colCount,0);
+                current = MapTable.MapRow1[i].NaCharacter;
+                tableLayoutPanel1.Controls.Add(newLable(current), colCount, 1);
+                current = MapTable.MapRow2[i].NaCharacter;
+                tableLayoutPanel2.Controls.Add(newLable(current), colCount, 1);
+                current = MapTable.MapRow3[i].NaCharacter;
+                tableLayoutPanel3.Controls.Add(newLable(current), colCount, 1);
+                current = MapTable.MapRow1[i].ReCharacter;
+                tableLayoutPanel1.Controls.Add(newLable(current), colCount, 2);
+                current = MapTable.MapRow2[i].ReCharacter;
                 tableLayoutPanel2.Controls.Add(newLable(Char.ToUpper(current)), colCount, 2);
-                current = MapTable.MapRow3[Char.ToLower(i)].ReCharacter;
+                current = MapTable.MapRow3[i].ReCharacter;
                 tableLayoutPanel3.Controls.Add(newLable(Char.ToUpper(current)), colCount, 2);
             }
         }
@@ -87,7 +103,7 @@ namespace Abjad
         {
             Label text = new Label();
             text.TextAlign = ContentAlignment.MiddleCenter;
-            text.Text = MapTable.MapScore[Char.ToLower(current)].ToString();
+            text.Text = MapTable.MapScore[current].ToString();
             return text;
         }
     }
