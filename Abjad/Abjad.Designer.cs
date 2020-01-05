@@ -97,7 +97,11 @@
             this.richTextBox1.Location = new System.Drawing.Point(149, 9);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox1.Name = "richTextBox1";
+#if (DEBUG || Release)
             this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+#elif (ReleaseFarsi)
+            this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+#endif
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.richTextBox1.Size = new System.Drawing.Size(640, 194);
             this.richTextBox1.TabIndex = 0;
