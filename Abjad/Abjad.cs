@@ -13,7 +13,11 @@ namespace Abjad
 {
 	public partial class AbjadMainForm : Form
 	{
+#if (DEBUG || Release)
 		private const string PLACE_HOLDER = "enter text here...";
+#elif (ReleaseFarsi)
+		private const string PLACE_HOLDER = "متن را اینجا وارد کنید ...";
+#endif       
 		Data data = new Data();
 
 		public AbjadMainForm()
