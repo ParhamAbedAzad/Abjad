@@ -20,7 +20,10 @@ namespace Abjad
 			char[] var1 = {'ا', 'گ', 'ب', 'ژ', 'ج', 'چ', 'د', 'پ', 'ه', 'غ', 'و', 'ظ', 'ز', 'ض', 'ح', 'ذ'};
 			char[] var2 = {'ا', 'پ', 'ب', 'چ', 'ح', 'غ', 'ز', 'ظ', 'ط', 'ش', 'ی', 'ت', 'ع', 'ز', 'س', 'ق'};
 			char[] var3 = {'ا', 'گ', 'ب', 'ژ', 'ه', 'غ', 'و', 'ظ', 'ط', 'خ', 'ی', 'ث', 'م', 'ر', 'ن', 'ق'};
-		
+		Array.Reverse(var1);
+		Array.Reverse(var2);
+		Array.Reverse(var3);
+
 			int j = 0;
 			for (int rowCount = 0; rowCount < tableLayoutPanel4.RowCount; rowCount++)
 			{
