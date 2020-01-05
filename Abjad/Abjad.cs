@@ -14,11 +14,14 @@ namespace Abjad
 	public partial class AbjadMainForm : Form
 	{
 #if (DEBUG || Release)
+		Data data = new Data();
+
 		private const string PLACE_HOLDER = "enter text here...";
+
 #elif (ReleaseFarsi)
+		private DataFarsi data = new DataFarsi();
 		private const string PLACE_HOLDER = "متن را اینجا وارد کنید ...";
 #endif       
-		Data data = new Data();
 
 		public AbjadMainForm()
 		{
@@ -408,9 +411,15 @@ namespace Abjad
 			if (!data.IsDisposed) data.Show();
 			else
 			{
+#if (DEBUG || Release)
 				data = new Data();
+#elif (ReleaseFarsi)
+				data = new DataFarsi();
+#endif
+
 				data.Show();
 			}
+			
 
 			//scratch that reworked it for the 3rd time now it works perfectly
 		}
