@@ -18,11 +18,10 @@ namespace Abjad
         {
             InitializeComponent();
             int k = 0;
-#if (DEBUG || Release)
-                Char current = 'a';
-#elif (ReleaseFarsi)
-            Char current = 'ا';
-#endif
+
+	        Char current = 'a';
+
+
             for (int rowCount=0; rowCount < tableLayoutPanel4.RowCount; rowCount++)
             {
                 for (int colCount = 0;colCount < tableLayoutPanel4.ColumnCount;colCount++)
@@ -49,11 +48,8 @@ namespace Abjad
                     }
                 }
             }
-#if (DEBUG || Release)
             Char i = 'a';
-#elif(ReleaseFarsi)
-            Char i = 'ا';
-#endif
+
             for (int colCount = 0; colCount < tableLayoutPanel1.ColumnCount; colCount++,i++)
             {
                 while (!MapTable.MapScore.ContainsKey(i))
