@@ -17,6 +17,7 @@ namespace Abjad
 		Data data = new Data();
 
 		private const string PLACE_HOLDER = "enter text here...";
+		
 
 #elif (ReleaseFarsi)
 		private DataFarsi data = new DataFarsi();
@@ -426,6 +427,7 @@ namespace Abjad
 
 		private void b1enter(object sender, EventArgs e)
 		{
+			
 			button1.ForeColor = Color.FromArgb(255, 138, 0);
 			button1.BackColor = Color.FromArgb(33, 33, 33);
 		}
@@ -446,6 +448,61 @@ namespace Abjad
 		{
 			button2.ForeColor = Color.FromArgb(0, 0, 0);
 			button2.BackColor = Color.FromArgb(255, 138, 0);
+		}
+
+		
+
+		private void button3_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
+		private bool dragging = false;
+		private Point dragCursorPoint;
+		private Point dragFormPoint;
+		private void button4_Click(object sender, EventArgs e)
+		{
+			this.WindowState = FormWindowState.Minimized;
+		}
+
+		private void panel1_MouseDown(object sender, MouseEventArgs e)
+		{
+			dragging = true;
+			dragCursorPoint = Cursor.Position;
+			dragFormPoint = this.Location;
+		}
+
+		private void panel1_MouseMove(object sender, MouseEventArgs e)
+		{
+			if (dragging)
+			{
+				Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+				this.Location = Point.Add(dragFormPoint, new Size(dif));
+			}
+		}
+
+		private void panel1_MouseUp(object sender, MouseEventArgs e)
+		{
+			dragging = false;
+		}
+
+		private void button3_MouseHover(object sender, EventArgs e)
+		{
+			button3.ForeColor = Color.FromArgb(255,255,255);
+		}
+
+		private void button3_MouseLeave(object sender, EventArgs e)
+		{
+			button3.ForeColor = Color.FromArgb(210, 210, 210);
+		}
+
+		private void button4_MouseHover(object sender, EventArgs e)
+		{
+			button4.ForeColor = Color.FromArgb(255, 255, 255);
+		}
+
+		private void button4_MouseLeave(object sender, EventArgs e)
+		{
+			button4.ForeColor = Color.FromArgb(210, 210, 210);
 		}
 	}
 }
