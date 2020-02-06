@@ -13,12 +13,12 @@ namespace Abjad
 {
 	public partial class AbjadMainForm : Form
 	{
+		private bool dragging = false;
+		private Point dragCursorPoint;
+		private Point dragFormPoint;
 #if (DEBUG || Release)
 		Data data = new Data();
-
 		private const string PLACE_HOLDER = "enter text here...";
-		
-
 #elif (ReleaseFarsi)
 		private DataFarsi data = new DataFarsi();
 		private const string PLACE_HOLDER = "متن را اینجا وارد کنید ...";
@@ -174,16 +174,27 @@ namespace Abjad
 
 		private void RichTextBox1_TextChanged(object sender, EventArgs e)
 		{
-			// Trace: button1.Location = AddPoints(richTextBox1.GetPositionFromCharIndex(richTextBox1.SelectionStart),richTextBox1.Location) - button1.Size;
+			string text = richTextBox1.Text;
+			if (text.ToLower() == "diamond")
+			{
+				pictureBox1.Visible = true;
+				var t = Task.Delay(5000);
+				Cursor.Current = Cursors.WaitCursor;
+				t.Wait();
+				pictureBox1.Visible = false;
+				Cursor.Current = Cursors.Default;
+			}
 		}
 
 		private void RichTextBox1_Enter(object sender, EventArgs e)
 		{
-			richTextBox1.ForeColor = Color.White;
-			if (richTextBox1.Text == PLACE_HOLDER)
+			string text = richTextBox1.Text;
+			richTextBox1.ForeColor = Color.Black;
+			if (text == PLACE_HOLDER)
 			{
 				richTextBox1.Text = "";
 			}
+			
 		}
 
 		private void RichTextBox1_Leave(object sender, EventArgs e)
@@ -191,7 +202,7 @@ namespace Abjad
 			if (richTextBox1.Text == "")
 			{
 				richTextBox1.Text = PLACE_HOLDER;
-				richTextBox1.ForeColor = Color.Gray;
+				richTextBox1.ForeColor = Color.LightGray;
 			}
 		}
 
@@ -245,32 +256,32 @@ namespace Abjad
 
 		private void label3_MouseEnter(object sender, EventArgs e)
 		{
-			label3.ForeColor = Color.White;
+			//label3.ForeColor = Color.White;
 		}
 
 		private void label3_MouseLeave(object sender, EventArgs e)
 		{
-			label3.ForeColor = Color.FromArgb(170, 170, 170);
+		//	label3.ForeColor = Color.FromArgb(170, 170, 170);
 		}
 
 		private void label2_MouseEnter(object sender, EventArgs e)
 		{
-			label2.ForeColor = Color.White;
+		//	label2.ForeColor = Color.White;
 		}
 
 		private void label2_MouseLeave(object sender, EventArgs e)
 		{
-			label2.ForeColor = Color.FromArgb(170, 170, 170);
+			//label2.ForeColor = Color.FromArgb(170, 170, 170);
 		}
 
 		private void label5_MouseEnter(object sender, EventArgs e)
 		{
-			label5.ForeColor = Color.White;
+			//label5.ForeColor = Color.White;
 		}
 
 		private void label5_MouseLeave(object sender, EventArgs e)
 		{
-			label5.ForeColor = Color.FromArgb(170, 170, 170);
+		//	label5.ForeColor = Color.FromArgb(170, 170, 170);
 		}
 
 		private void AlignCenterAll()
@@ -427,38 +438,30 @@ namespace Abjad
 
 		private void b1enter(object sender, EventArgs e)
 		{
-			
-			button1.ForeColor = Color.FromArgb(255, 138, 0);
-			button1.BackColor = Color.FromArgb(33, 33, 33);
+			button1.BackColor = Color.FromArgb(104, 110, 115);
 		}
 
 		private void b1leave(object sender, EventArgs e)
 		{
-			button1.ForeColor = Color.FromArgb(0, 0, 0);
-			button1.BackColor = Color.FromArgb(255, 138, 0);
+			button1.BackColor = Color.FromArgb(84, 90, 95);
 		}
 
 		private void b2enter(object sender, EventArgs e)
 		{
-			button2.ForeColor = Color.FromArgb(255, 138, 0);
-			button2.BackColor = Color.FromArgb(33, 33, 33);
+			button2.BackColor = Color.FromArgb(104, 110, 115);
 		}
 
 		private void b2leave(object sender, EventArgs e)
 		{
-			button2.ForeColor = Color.FromArgb(0, 0, 0);
-			button2.BackColor = Color.FromArgb(255, 138, 0);
+			button2.BackColor = Color.FromArgb(84, 90, 95);
 		}
 
-		
+
 
 		private void button3_Click(object sender, EventArgs e)
 		{
 			this.Close();
 		}
-		private bool dragging = false;
-		private Point dragCursorPoint;
-		private Point dragFormPoint;
 		private void button4_Click(object sender, EventArgs e)
 		{
 			this.WindowState = FormWindowState.Minimized;
@@ -487,22 +490,22 @@ namespace Abjad
 
 		private void button3_MouseHover(object sender, EventArgs e)
 		{
-			button3.ForeColor = Color.FromArgb(255,255,255);
+			button3.ForeColor = Color.FromArgb(35,35,35);
 		}
 
 		private void button3_MouseLeave(object sender, EventArgs e)
 		{
-			button3.ForeColor = Color.FromArgb(210, 210, 210);
+			button3.ForeColor = Color.FromArgb(84, 90, 95);
 		}
 
 		private void button4_MouseHover(object sender, EventArgs e)
 		{
-			button4.ForeColor = Color.FromArgb(255, 255, 255);
+			button4.ForeColor = Color.FromArgb(35,35,35);
 		}
 
 		private void button4_MouseLeave(object sender, EventArgs e)
 		{
-			button4.ForeColor = Color.FromArgb(210, 210, 210);
+			button4.ForeColor = Color.FromArgb(84, 90, 95);
 		}
 	}
 }

@@ -40,7 +40,7 @@
 			// 
 			// tableLayoutPanel4
 			// 
-			this.tableLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.tableLayoutPanel4.BackColor = System.Drawing.Color.White;
 			this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
 			this.tableLayoutPanel4.ColumnCount = 8;
 			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.49953F));
@@ -52,6 +52,7 @@
 			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.49953F));
 			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.50328F));
 			this.tableLayoutPanel4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tableLayoutPanel4.ForeColor = System.Drawing.Color.Black;
 			this.tableLayoutPanel4.Location = new System.Drawing.Point(15, 17);
 			this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
 			this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -71,7 +72,7 @@
 			// 
 			// tableLayoutPanel2
 			// 
-			this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.tableLayoutPanel2.BackColor = System.Drawing.Color.White;
 			this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
 			this.tableLayoutPanel2.ColumnCount = 16;
 			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.249805F));
@@ -91,6 +92,7 @@
 			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.249805F));
 			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25293F));
 			this.tableLayoutPanel2.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tableLayoutPanel2.ForeColor = System.Drawing.Color.Black;
 			this.tableLayoutPanel2.Location = new System.Drawing.Point(420, 166);
 			this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
 			this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -104,7 +106,7 @@
 			// 
 			// tableLayoutPanel3
 			// 
-			this.tableLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
 			this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
 			this.tableLayoutPanel3.ColumnCount = 16;
 			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.250054F));
@@ -124,6 +126,7 @@
 			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.24818F));
 			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25293F));
 			this.tableLayoutPanel3.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tableLayoutPanel3.ForeColor = System.Drawing.Color.Black;
 			this.tableLayoutPanel3.Location = new System.Drawing.Point(420, 321);
 			this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
 			this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -166,7 +169,7 @@
 			// 
 			// tableLayoutPanel1
 			// 
-			this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
 			this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
 			this.tableLayoutPanel1.ColumnCount = 16;
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
@@ -186,6 +189,7 @@
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
 			this.tableLayoutPanel1.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tableLayoutPanel1.ForeColor = System.Drawing.Color.Black;
 			this.tableLayoutPanel1.Location = new System.Drawing.Point(420, 13);
 			this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
 			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -201,7 +205,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoSize = true;
-			this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.ClientSize = new System.Drawing.Size(1115, 479);
 			this.Controls.Add(this.tableLayoutPanel1);
 			this.Controls.Add(this.label3);

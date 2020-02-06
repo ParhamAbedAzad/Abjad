@@ -96,14 +96,18 @@
 			// 
 			// richTextBox1
 			// 
-			this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
 			this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox1.ForeColor = System.Drawing.SystemColors.Window;
+			this.richTextBox1.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
 			this.richTextBox1.Location = new System.Drawing.Point(16, 91);
 			this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox1.Name = "richTextBox1";
+#if (DEBUG || Release)
+
+			this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+#elif (ReleaseFarsi)
 			this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+#endif
 			this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
 			this.richTextBox1.Size = new System.Drawing.Size(1086, 239);
 			this.richTextBox1.TabIndex = 0;
@@ -125,10 +129,12 @@
 			// 
 			// button1
 			// 
-			this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(127)))), ((int)(((byte)(0)))));
+			this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.button1.Font = new System.Drawing.Font("Impact", 15F);
+			this.button1.FlatAppearance.BorderSize = 0;
+			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 15F);
+			this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(234)))), ((int)(((byte)(88)))));
 			this.button1.Location = new System.Drawing.Point(13, 12);
 			this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.button1.Name = "button1";
@@ -155,7 +161,7 @@
 			// 
 			// tabPage3
 			// 
-			this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.tabPage3.Controls.Add(this.label3);
 			this.tabPage3.Controls.Add(this.label2);
 			this.tabPage3.Controls.Add(this.label5);
@@ -182,7 +188,7 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.label3.Location = new System.Drawing.Point(727, 36);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(112, 29);
@@ -195,7 +201,7 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.label2.Location = new System.Drawing.Point(515, 36);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(56, 29);
@@ -208,7 +214,7 @@
 			// 
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.label5.Location = new System.Drawing.Point(271, 36);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(65, 29);
@@ -219,11 +225,11 @@
 			// 
 			// richTextBox13
 			// 
-			this.richTextBox13.BackColor = System.Drawing.Color.Black;
+			this.richTextBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox13.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox13.Location = new System.Drawing.Point(666, 214);
+			this.richTextBox13.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+			this.richTextBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox13.Location = new System.Drawing.Point(666, 224);
 			this.richTextBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox13.Name = "richTextBox13";
 			this.richTextBox13.ReadOnly = true;
@@ -234,11 +240,11 @@
 			// 
 			// richTextBox9
 			// 
-			this.richTextBox9.BackColor = System.Drawing.Color.Black;
+			this.richTextBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox9.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox9.Location = new System.Drawing.Point(426, 214);
+			this.richTextBox9.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+			this.richTextBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox9.Location = new System.Drawing.Point(426, 224);
 			this.richTextBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox9.Name = "richTextBox9";
 			this.richTextBox9.ReadOnly = true;
@@ -249,11 +255,11 @@
 			// 
 			// richTextBox5
 			// 
-			this.richTextBox5.BackColor = System.Drawing.Color.Black;
+			this.richTextBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox5.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox5.Location = new System.Drawing.Point(186, 214);
+			this.richTextBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+			this.richTextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox5.Location = new System.Drawing.Point(186, 224);
 			this.richTextBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox5.Name = "richTextBox5";
 			this.richTextBox5.ReadOnly = true;
@@ -264,11 +270,11 @@
 			// 
 			// richTextBox12
 			// 
-			this.richTextBox12.BackColor = System.Drawing.Color.Black;
+			this.richTextBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox12.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox12.Location = new System.Drawing.Point(666, 164);
+			this.richTextBox12.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+			this.richTextBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox12.Location = new System.Drawing.Point(666, 172);
 			this.richTextBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox12.Name = "richTextBox12";
 			this.richTextBox12.ReadOnly = true;
@@ -279,11 +285,11 @@
 			// 
 			// richTextBox8
 			// 
-			this.richTextBox8.BackColor = System.Drawing.Color.Black;
+			this.richTextBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox8.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox8.Location = new System.Drawing.Point(426, 164);
+			this.richTextBox8.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+			this.richTextBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox8.Location = new System.Drawing.Point(426, 172);
 			this.richTextBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox8.Name = "richTextBox8";
 			this.richTextBox8.ReadOnly = true;
@@ -294,11 +300,11 @@
 			// 
 			// richTextBox4
 			// 
-			this.richTextBox4.BackColor = System.Drawing.Color.Black;
+			this.richTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox4.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox4.Location = new System.Drawing.Point(186, 164);
+			this.richTextBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+			this.richTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox4.Location = new System.Drawing.Point(186, 172);
 			this.richTextBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox4.Name = "richTextBox4";
 			this.richTextBox4.ReadOnly = true;
@@ -309,11 +315,11 @@
 			// 
 			// richTextBox11
 			// 
-			this.richTextBox11.BackColor = System.Drawing.Color.Black;
+			this.richTextBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox11.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox11.Location = new System.Drawing.Point(666, 116);
+			this.richTextBox11.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+			this.richTextBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox11.Location = new System.Drawing.Point(666, 120);
 			this.richTextBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox11.Name = "richTextBox11";
 			this.richTextBox11.ReadOnly = true;
@@ -324,11 +330,11 @@
 			// 
 			// richTextBox7
 			// 
-			this.richTextBox7.BackColor = System.Drawing.Color.Black;
+			this.richTextBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox7.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox7.Location = new System.Drawing.Point(426, 116);
+			this.richTextBox7.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+			this.richTextBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox7.Location = new System.Drawing.Point(426, 120);
 			this.richTextBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox7.Name = "richTextBox7";
 			this.richTextBox7.ReadOnly = true;
@@ -339,11 +345,11 @@
 			// 
 			// richTextBox3
 			// 
-			this.richTextBox3.BackColor = System.Drawing.Color.Black;
+			this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox3.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox3.Location = new System.Drawing.Point(186, 116);
+			this.richTextBox3.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+			this.richTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox3.Location = new System.Drawing.Point(186, 120);
 			this.richTextBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox3.Name = "richTextBox3";
 			this.richTextBox3.ReadOnly = true;
@@ -354,10 +360,10 @@
 			// 
 			// richTextBox10
 			// 
-			this.richTextBox10.BackColor = System.Drawing.Color.Black;
+			this.richTextBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox10.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+			this.richTextBox10.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+			this.richTextBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.richTextBox10.Location = new System.Drawing.Point(666, 68);
 			this.richTextBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox10.Name = "richTextBox10";
@@ -369,10 +375,10 @@
 			// 
 			// richTextBox6
 			// 
-			this.richTextBox6.BackColor = System.Drawing.Color.Black;
+			this.richTextBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox6.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+			this.richTextBox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+			this.richTextBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.richTextBox6.Location = new System.Drawing.Point(426, 68);
 			this.richTextBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox6.Name = "richTextBox6";
@@ -384,10 +390,10 @@
 			// 
 			// richTextBox2
 			// 
-			this.richTextBox2.BackColor = System.Drawing.Color.Black;
+			this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox2.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+			this.richTextBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+			this.richTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.richTextBox2.Location = new System.Drawing.Point(186, 68);
 			this.richTextBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox2.Name = "richTextBox2";
@@ -400,7 +406,7 @@
 			// 
 			// tabPage4
 			// 
-			this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.tabPage4.Controls.Add(this.label4);
 			this.tabPage4.Controls.Add(this.label6);
 			this.tabPage4.Controls.Add(this.label7);
@@ -427,7 +433,7 @@
 			// 
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.label4.Location = new System.Drawing.Point(727, 36);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(112, 29);
@@ -438,7 +444,7 @@
 			// 
 			this.label6.AutoSize = true;
 			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.label6.Location = new System.Drawing.Point(515, 36);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(56, 29);
@@ -449,7 +455,7 @@
 			// 
 			this.label7.AutoSize = true;
 			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label7.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.label7.Location = new System.Drawing.Point(271, 36);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(65, 29);
@@ -458,11 +464,11 @@
 			// 
 			// richTextBox14
 			// 
-			this.richTextBox14.BackColor = System.Drawing.Color.Black;
+			this.richTextBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox14.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox14.Location = new System.Drawing.Point(666, 214);
+			this.richTextBox14.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox14.Location = new System.Drawing.Point(666, 224);
 			this.richTextBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox14.Name = "richTextBox14";
 			this.richTextBox14.ReadOnly = true;
@@ -473,11 +479,11 @@
 			// 
 			// richTextBox15
 			// 
-			this.richTextBox15.BackColor = System.Drawing.Color.Black;
+			this.richTextBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox15.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox15.Location = new System.Drawing.Point(426, 214);
+			this.richTextBox15.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox15.Location = new System.Drawing.Point(426, 224);
 			this.richTextBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox15.Name = "richTextBox15";
 			this.richTextBox15.ReadOnly = true;
@@ -488,11 +494,11 @@
 			// 
 			// richTextBox16
 			// 
-			this.richTextBox16.BackColor = System.Drawing.Color.Black;
+			this.richTextBox16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox16.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox16.Location = new System.Drawing.Point(186, 214);
+			this.richTextBox16.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox16.Location = new System.Drawing.Point(186, 224);
 			this.richTextBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox16.Name = "richTextBox16";
 			this.richTextBox16.ReadOnly = true;
@@ -503,11 +509,11 @@
 			// 
 			// richTextBox17
 			// 
-			this.richTextBox17.BackColor = System.Drawing.Color.Black;
+			this.richTextBox17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox17.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox17.Location = new System.Drawing.Point(666, 164);
+			this.richTextBox17.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox17.Location = new System.Drawing.Point(666, 172);
 			this.richTextBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox17.Name = "richTextBox17";
 			this.richTextBox17.ReadOnly = true;
@@ -518,11 +524,11 @@
 			// 
 			// richTextBox18
 			// 
-			this.richTextBox18.BackColor = System.Drawing.Color.Black;
+			this.richTextBox18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox18.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox18.Location = new System.Drawing.Point(426, 164);
+			this.richTextBox18.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox18.Location = new System.Drawing.Point(426, 172);
 			this.richTextBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox18.Name = "richTextBox18";
 			this.richTextBox18.ReadOnly = true;
@@ -533,11 +539,11 @@
 			// 
 			// richTextBox19
 			// 
-			this.richTextBox19.BackColor = System.Drawing.Color.Black;
+			this.richTextBox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox19.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox19.Location = new System.Drawing.Point(186, 164);
+			this.richTextBox19.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox19.Location = new System.Drawing.Point(186, 172);
 			this.richTextBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox19.Name = "richTextBox19";
 			this.richTextBox19.ReadOnly = true;
@@ -548,11 +554,11 @@
 			// 
 			// richTextBox20
 			// 
-			this.richTextBox20.BackColor = System.Drawing.Color.Black;
+			this.richTextBox20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox20.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox20.Location = new System.Drawing.Point(666, 116);
+			this.richTextBox20.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox20.Location = new System.Drawing.Point(666, 120);
 			this.richTextBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox20.Name = "richTextBox20";
 			this.richTextBox20.ReadOnly = true;
@@ -563,11 +569,11 @@
 			// 
 			// richTextBox21
 			// 
-			this.richTextBox21.BackColor = System.Drawing.Color.Black;
+			this.richTextBox21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox21.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox21.Location = new System.Drawing.Point(426, 116);
+			this.richTextBox21.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox21.Location = new System.Drawing.Point(426, 120);
 			this.richTextBox21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox21.Name = "richTextBox21";
 			this.richTextBox21.ReadOnly = true;
@@ -578,11 +584,11 @@
 			// 
 			// richTextBox22
 			// 
-			this.richTextBox22.BackColor = System.Drawing.Color.Black;
+			this.richTextBox22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox22.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox22.Location = new System.Drawing.Point(186, 116);
+			this.richTextBox22.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox22.Location = new System.Drawing.Point(186, 120);
 			this.richTextBox22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox22.Name = "richTextBox22";
 			this.richTextBox22.ReadOnly = true;
@@ -593,10 +599,10 @@
 			// 
 			// richTextBox23
 			// 
-			this.richTextBox23.BackColor = System.Drawing.Color.Black;
+			this.richTextBox23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox23.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+			this.richTextBox23.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.richTextBox23.Location = new System.Drawing.Point(666, 68);
 			this.richTextBox23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox23.Name = "richTextBox23";
@@ -608,10 +614,10 @@
 			// 
 			// richTextBox24
 			// 
-			this.richTextBox24.BackColor = System.Drawing.Color.Black;
+			this.richTextBox24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox24.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+			this.richTextBox24.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.richTextBox24.Location = new System.Drawing.Point(426, 68);
 			this.richTextBox24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox24.Name = "richTextBox24";
@@ -623,10 +629,10 @@
 			// 
 			// richTextBox25
 			// 
-			this.richTextBox25.BackColor = System.Drawing.Color.Black;
+			this.richTextBox25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox25.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+			this.richTextBox25.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.richTextBox25.Location = new System.Drawing.Point(186, 68);
 			this.richTextBox25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox25.Name = "richTextBox25";
@@ -638,7 +644,7 @@
 			// 
 			// tabPage5
 			// 
-			this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.tabPage5.Controls.Add(this.label8);
 			this.tabPage5.Controls.Add(this.label9);
 			this.tabPage5.Controls.Add(this.label10);
@@ -665,7 +671,7 @@
 			// 
 			this.label8.AutoSize = true;
 			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label8.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.label8.Location = new System.Drawing.Point(727, 36);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(112, 29);
@@ -676,7 +682,7 @@
 			// 
 			this.label9.AutoSize = true;
 			this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label9.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.label9.Location = new System.Drawing.Point(515, 36);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(56, 29);
@@ -687,7 +693,7 @@
 			// 
 			this.label10.AutoSize = true;
 			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label10.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.label10.Location = new System.Drawing.Point(271, 36);
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(65, 29);
@@ -696,11 +702,11 @@
 			// 
 			// richTextBox26
 			// 
-			this.richTextBox26.BackColor = System.Drawing.Color.Black;
+			this.richTextBox26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox26.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox26.Location = new System.Drawing.Point(666, 214);
+			this.richTextBox26.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox26.Location = new System.Drawing.Point(666, 224);
 			this.richTextBox26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox26.Name = "richTextBox26";
 			this.richTextBox26.ReadOnly = true;
@@ -711,11 +717,11 @@
 			// 
 			// richTextBox27
 			// 
-			this.richTextBox27.BackColor = System.Drawing.Color.Black;
+			this.richTextBox27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox27.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox27.Location = new System.Drawing.Point(426, 214);
+			this.richTextBox27.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox27.Location = new System.Drawing.Point(426, 224);
 			this.richTextBox27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox27.Name = "richTextBox27";
 			this.richTextBox27.ReadOnly = true;
@@ -726,11 +732,11 @@
 			// 
 			// richTextBox28
 			// 
-			this.richTextBox28.BackColor = System.Drawing.Color.Black;
+			this.richTextBox28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox28.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox28.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox28.Location = new System.Drawing.Point(186, 214);
+			this.richTextBox28.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox28.Location = new System.Drawing.Point(186, 224);
 			this.richTextBox28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox28.Name = "richTextBox28";
 			this.richTextBox28.ReadOnly = true;
@@ -741,11 +747,11 @@
 			// 
 			// richTextBox29
 			// 
-			this.richTextBox29.BackColor = System.Drawing.Color.Black;
+			this.richTextBox29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox29.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox29.Location = new System.Drawing.Point(666, 164);
+			this.richTextBox29.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox29.Location = new System.Drawing.Point(666, 172);
 			this.richTextBox29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox29.Name = "richTextBox29";
 			this.richTextBox29.ReadOnly = true;
@@ -756,11 +762,11 @@
 			// 
 			// richTextBox30
 			// 
-			this.richTextBox30.BackColor = System.Drawing.Color.Black;
+			this.richTextBox30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox30.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox30.Location = new System.Drawing.Point(426, 164);
+			this.richTextBox30.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox30.Location = new System.Drawing.Point(426, 172);
 			this.richTextBox30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox30.Name = "richTextBox30";
 			this.richTextBox30.ReadOnly = true;
@@ -771,11 +777,11 @@
 			// 
 			// richTextBox31
 			// 
-			this.richTextBox31.BackColor = System.Drawing.Color.Black;
+			this.richTextBox31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox31.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox31.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox31.Location = new System.Drawing.Point(186, 164);
+			this.richTextBox31.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox31.Location = new System.Drawing.Point(186, 172);
 			this.richTextBox31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox31.Name = "richTextBox31";
 			this.richTextBox31.ReadOnly = true;
@@ -786,11 +792,11 @@
 			// 
 			// richTextBox32
 			// 
-			this.richTextBox32.BackColor = System.Drawing.Color.Black;
+			this.richTextBox32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox32.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox32.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox32.Location = new System.Drawing.Point(666, 116);
+			this.richTextBox32.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox32.Location = new System.Drawing.Point(666, 120);
 			this.richTextBox32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox32.Name = "richTextBox32";
 			this.richTextBox32.ReadOnly = true;
@@ -801,11 +807,11 @@
 			// 
 			// richTextBox33
 			// 
-			this.richTextBox33.BackColor = System.Drawing.Color.Black;
+			this.richTextBox33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox33.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox33.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox33.Location = new System.Drawing.Point(426, 116);
+			this.richTextBox33.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox33.Location = new System.Drawing.Point(426, 120);
 			this.richTextBox33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox33.Name = "richTextBox33";
 			this.richTextBox33.ReadOnly = true;
@@ -816,11 +822,11 @@
 			// 
 			// richTextBox34
 			// 
-			this.richTextBox34.BackColor = System.Drawing.Color.Black;
+			this.richTextBox34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox34.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-			this.richTextBox34.Location = new System.Drawing.Point(186, 116);
+			this.richTextBox34.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
+			this.richTextBox34.Location = new System.Drawing.Point(186, 120);
 			this.richTextBox34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox34.Name = "richTextBox34";
 			this.richTextBox34.ReadOnly = true;
@@ -831,10 +837,10 @@
 			// 
 			// richTextBox35
 			// 
-			this.richTextBox35.BackColor = System.Drawing.Color.Black;
+			this.richTextBox35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox35.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+			this.richTextBox35.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.richTextBox35.Location = new System.Drawing.Point(666, 68);
 			this.richTextBox35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox35.Name = "richTextBox35";
@@ -846,10 +852,10 @@
 			// 
 			// richTextBox36
 			// 
-			this.richTextBox36.BackColor = System.Drawing.Color.Black;
+			this.richTextBox36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox36.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+			this.richTextBox36.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.richTextBox36.Location = new System.Drawing.Point(426, 68);
 			this.richTextBox36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox36.Name = "richTextBox36";
@@ -861,10 +867,10 @@
 			// 
 			// richTextBox37
 			// 
-			this.richTextBox37.BackColor = System.Drawing.Color.Black;
+			this.richTextBox37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
 			this.richTextBox37.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.richTextBox37.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+			this.richTextBox37.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.richTextBox37.Location = new System.Drawing.Point(186, 68);
 			this.richTextBox37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox37.Name = "richTextBox37";
@@ -876,10 +882,12 @@
 			// 
 			// button2
 			// 
-			this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(127)))), ((int)(((byte)(0)))));
+			this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.button2.Font = new System.Drawing.Font("Impact", 15F);
+			this.button2.FlatAppearance.BorderSize = 0;
+			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 15F);
+			this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(234)))), ((int)(((byte)(88)))));
 			this.button2.Location = new System.Drawing.Point(155, 11);
 			this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.button2.Name = "button2";
@@ -897,11 +905,12 @@
 			this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
 			this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+			this.button3.FlatAppearance.BorderSize = 0;
 			this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+			this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.button3.Location = new System.Drawing.Point(1073, 11);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(33, 45);
@@ -917,11 +926,12 @@
 			this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
 			this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+			this.button4.FlatAppearance.BorderSize = 0;
 			this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+			this.button4.Font = new System.Drawing.Font("Webdings", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.button4.Location = new System.Drawing.Point(1034, 11);
 			this.button4.Name = "button4";
 			this.button4.Size = new System.Drawing.Size(33, 45);
@@ -934,7 +944,7 @@
 			// 
 			// panel1
 			// 
-			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(234)))), ((int)(((byte)(88)))));
 			this.panel1.Controls.Add(this.pictureBox1);
 			this.panel1.Controls.Add(this.button3);
 			this.panel1.Controls.Add(this.button1);
@@ -951,22 +961,23 @@
 			// 
 			// pictureBox1
 			// 
-			this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+			this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(234)))), ((int)(((byte)(88)))));
 			this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
 			this.pictureBox1.Enabled = false;
 			this.pictureBox1.Image = global::Abjad.Properties.Resources.diamond_13463;
-			this.pictureBox1.Location = new System.Drawing.Point(297, 0);
+			this.pictureBox1.Location = new System.Drawing.Point(292, 0);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(714, 68);
+			this.pictureBox1.Size = new System.Drawing.Size(648, 68);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox1.TabIndex = 11;
 			this.pictureBox1.TabStop = false;
+			this.pictureBox1.Visible = false;
 			// 
 			// AbjadMainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.Black;
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(90)))), ((int)(((byte)(95)))));
 			this.ClientSize = new System.Drawing.Size(1118, 685);
 			this.Controls.Add(this.richTextBox1);
 			this.Controls.Add(this.panel1);
