@@ -22,7 +22,7 @@ namespace Abjad
 #elif (ReleaseFarsi)
 		private DataFarsi data = new DataFarsi();
 		private const string PLACE_HOLDER = "متن را اینجا وارد کنید ...";
-#endif       
+#endif
 
 		public AbjadMainForm()
 		{
@@ -194,7 +194,6 @@ namespace Abjad
 			{
 				richTextBox1.Text = "";
 			}
-			
 		}
 
 		private void RichTextBox1_Leave(object sender, EventArgs e)
@@ -261,12 +260,12 @@ namespace Abjad
 
 		private void label3_MouseLeave(object sender, EventArgs e)
 		{
-		//	label3.ForeColor = Color.FromArgb(170, 170, 170);
+			//	label3.ForeColor = Color.FromArgb(170, 170, 170);
 		}
 
 		private void label2_MouseEnter(object sender, EventArgs e)
 		{
-		//	label2.ForeColor = Color.White;
+			//	label2.ForeColor = Color.White;
 		}
 
 		private void label2_MouseLeave(object sender, EventArgs e)
@@ -281,7 +280,7 @@ namespace Abjad
 
 		private void label5_MouseLeave(object sender, EventArgs e)
 		{
-		//	label5.ForeColor = Color.FromArgb(170, 170, 170);
+			//	label5.ForeColor = Color.FromArgb(170, 170, 170);
 		}
 
 		private void AlignCenterAll()
@@ -428,10 +427,8 @@ namespace Abjad
 #elif (ReleaseFarsi)
 				data = new DataFarsi();
 #endif
-
 				data.Show();
 			}
-			
 
 			//scratch that reworked it for the 3rd time now it works perfectly
 		}
@@ -456,12 +453,11 @@ namespace Abjad
 			button2.BackColor = Color.FromArgb(84, 90, 95);
 		}
 
-
-
 		private void button3_Click(object sender, EventArgs e)
 		{
 			this.Close();
 		}
+
 		private void button4_Click(object sender, EventArgs e)
 		{
 			this.WindowState = FormWindowState.Minimized;
@@ -490,7 +486,7 @@ namespace Abjad
 
 		private void button3_MouseHover(object sender, EventArgs e)
 		{
-			button3.ForeColor = Color.FromArgb(35,35,35);
+			button3.ForeColor = Color.FromArgb(35, 35, 35);
 		}
 
 		private void button3_MouseLeave(object sender, EventArgs e)
@@ -500,12 +496,17 @@ namespace Abjad
 
 		private void button4_MouseHover(object sender, EventArgs e)
 		{
-			button4.ForeColor = Color.FromArgb(35,35,35);
+			button4.ForeColor = Color.FromArgb(35, 35, 35);
 		}
 
 		private void button4_MouseLeave(object sender, EventArgs e)
 		{
 			button4.ForeColor = Color.FromArgb(84, 90, 95);
+		}
+
+		private void panel5_Paint(object sender, PaintEventArgs e)
+		{
+
 		}
 	}
 }
