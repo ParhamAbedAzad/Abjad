@@ -67,8 +67,7 @@ namespace Abjad
 					MessageBox.Show(e3.StackTrace, "oops! something went wrong", MessageBoxButtons.OK,
 						MessageBoxIcon.Error);
 				else
-					MessageBox.Show(e3.Message + "\n" + e3.StackTrace, "Error", MessageBoxButtons.OK,
-						MessageBoxIcon.Error);
+					MessageBox.Show(e3.Message);
 				//throw;
 				//ytf u throw exception to close the entire fucking app after small error ? 
 			}
@@ -215,7 +214,19 @@ namespace Abjad
 
 			input = richTextBox1.Text.Replace(" ", "");
 			input = input.Replace("\n", "");
-			input = input.ToLower();
+			input = input.Replace("!", "");
+			input = input.Replace("?", "");
+			input = input.Replace(".", "");
+			input = input.Replace(",", "");
+			input = input.Replace(";", "");
+            input = input.Replace(":", "");
+            input = input.Replace(")", "");
+            input = input.Replace("(", "");
+            input = input.Replace("}", "");
+            input = input.Replace("{", "");
+            input = input.Replace("<", "");
+            input = input.Replace(">", "");
+            input = input.ToLower();
 			if (input == "")
 			{
 				throw new NoNullAllowedException("enter the text first (only white space and Enter are not text)");
