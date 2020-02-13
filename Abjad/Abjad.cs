@@ -177,11 +177,11 @@ namespace Abjad
 			if (text.ToLower() == "diamond")
 			{
 				pictureBox1.Visible = true;
-				var t = Task.Delay(5000);
-				Cursor.Current = Cursors.WaitCursor;
-				t.Wait();
+				//var t = Task.Delay(5000);
+				//Cursor.Current = Cursors.WaitCursor;
+				//t.Wait();
 				pictureBox1.Visible = false;
-				Cursor.Current = Cursors.Default;
+				//Cursor.Current = Cursors.Default;
 			}
 		}
 
@@ -519,5 +519,10 @@ namespace Abjad
 		{
 
 		}
-	}
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
