@@ -7,7 +7,7 @@
     <ProjectGuid>{E1697F1A-F2DE-4739-8189-71CB48CEAECE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Abjad</RootNamespace>
-    <AssemblyName>Abjad Farsi</AssemblyName>
+    <AssemblyName>Abjad english</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -53,7 +53,7 @@ namespace Abjad.Code
             Array.Reverse(MidTable[1], 0, (length / 4 + (MidTable[1][length / 4] == 0 ? 0 : 1)));
             MidTable[2] = Table[1];
             MidTable[3] = Table[2];
-            Array.Reverse(MidTable[3], 0, (length / 4 + (MidTable[1][length / 4] == 0 ? 0 : 1)));
+            Array.Reverse(MidTable[3], 0, (length / 4 + (MidTable[3][length / 4] == 0 ? 0 : 1)));
         }
         private void AddToTables(int i, int j, char currentChar)
         {
