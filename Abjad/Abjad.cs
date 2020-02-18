@@ -436,22 +436,22 @@ namespace Abjad
 
 		private void b1enter(object sender, EventArgs e)
 		{
-			button1.BackColor = Color.FromArgb(104, 110, 115);
+			button1.BackColor = Color.FromArgb(44,44,44);
 		}
 
 		private void b1leave(object sender, EventArgs e)
 		{
-			button1.BackColor = Color.FromArgb(84, 90, 95);
+			button1.BackColor = Color.FromArgb(33,33,33);
 		}
 
 		private void b2enter(object sender, EventArgs e)
 		{
-			button2.BackColor = Color.FromArgb(104, 110, 115);
+			button2.BackColor = Color.FromArgb(44, 44, 44);
 		}
 
 		private void b2leave(object sender, EventArgs e)
 		{
-			button2.BackColor = Color.FromArgb(84, 90, 95);
+			button2.BackColor = Color.FromArgb(33,33,33);
 		}
 
 		private void button3_Click(object sender, EventArgs e)
@@ -487,22 +487,22 @@ namespace Abjad
 
 		private void button3_MouseHover(object sender, EventArgs e)
 		{
-			button3.ForeColor = Color.FromArgb(35, 35, 35);
+			button3.ForeColor = Color.FromArgb(200,200,200);
 		}
 
 		private void button3_MouseLeave(object sender, EventArgs e)
 		{
-			button3.ForeColor = Color.FromArgb(84, 90, 95);
+			button3.ForeColor = Color.FromArgb(33,33,33);
 		}
 
 		private void button4_MouseHover(object sender, EventArgs e)
 		{
-			button4.ForeColor = Color.FromArgb(35, 35, 35);
+			button4.ForeColor = Color.FromArgb(200, 200, 200);
 		}
 
 		private void button4_MouseLeave(object sender, EventArgs e)
 		{
-			button4.ForeColor = Color.FromArgb(84, 90, 95);
+			button4.ForeColor = Color.FromArgb(33,33,33);
 		}
 
 		private void panel5_Paint(object sender, PaintEventArgs e)
@@ -522,12 +522,12 @@ namespace Abjad
 
 		private void b5enter(object sender, EventArgs e)
 		{
-			button5.BackColor = Color.FromArgb(104, 110, 115);
+			button5.BackColor = Color.FromArgb(44,44,44);
 		}
 
 		private void b5leave(object sender, EventArgs e)
 		{
-			button5.BackColor = Color.FromArgb(84, 90, 95);
+			button5.BackColor = Color.FromArgb(33,33,33);
 		}
 	}
 }
