@@ -86,10 +86,19 @@
     <Compile Include="Abjad.Designer.cs">
       <DependentUpon>Abjad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Analysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analysis.Designer.cs">
+      <DependentUpon>Analysis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Abjad.resx">
       <DependentUpon>Abjad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis.resx">
+      <DependentUpon>Analysis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Data.resx">
       <DependentUpon>Data.cs</DependentUpon>

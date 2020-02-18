@@ -16,6 +16,7 @@ namespace Abjad
 		private bool dragging = false;
 		private Point dragCursorPoint;
 		private Point dragFormPoint;
+		Analysis analysis  = new Analysis();
 #if (DEBUG || Release)
 		Data data = new Data();
 		private const string PLACE_HOLDER = "enter text here...";
@@ -507,6 +508,26 @@ namespace Abjad
 		private void panel5_Paint(object sender, PaintEventArgs e)
 		{
 
+		}
+
+		private void button5_Click(object sender, EventArgs e)
+		{
+			if (!analysis.IsDisposed) analysis.Show();
+			else
+			{
+				analysis = new Analysis();
+				analysis.Show();
+			}
+		}
+
+		private void b5enter(object sender, EventArgs e)
+		{
+			button5.BackColor = Color.FromArgb(104, 110, 115);
+		}
+
+		private void b5leave(object sender, EventArgs e)
+		{
+			button5.BackColor = Color.FromArgb(84, 90, 95);
 		}
 	}
 }
