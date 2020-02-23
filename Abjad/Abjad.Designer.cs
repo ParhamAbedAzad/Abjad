@@ -108,7 +108,7 @@
 			this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.richTextBox1.Name = "richTextBox1";
 #if (Release||Debug)
-			this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.NO;
+			this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
 #elif (ReleaseFarsi)
 			this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.YES;
 #endif
