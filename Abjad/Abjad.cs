@@ -16,8 +16,10 @@ namespace Abjad
 		private bool dragging = false;
 		private Point dragCursorPoint;
 		private Point dragFormPoint;
-		private static String anal ="";
-		private Analysis analysis = new Analysis(anal);
+		private static String anal1 ="";
+		private static String anal2 = "";
+		private static String anal3 = "";
+		private Analysis analysis = new Analysis("");
 #if (DEBUG || Release)
 		Data data = new Data();
 		private const string PLACE_HOLDER = "enter text here...";
@@ -32,6 +34,19 @@ namespace Abjad
 			AlignCenterAll();
 		}
 
+		private void fill_anal(Variant1 variant1 , Variant2 variant2 , Variant3 variant3)
+		{
+			//TODO sth
+			for (int i = 0; i < 500; i++)
+			{
+				for (int j = 0; j < 4; j++)
+				{
+					anal1 += "  "  +  variant1.MidTable[j][i].ToString();
+				}
+
+				anal1 += '\n';
+			}
+		}
 		private void button1_Click_1(object sender, EventArgs e)
 		{
 			try
@@ -45,9 +60,9 @@ namespace Abjad
 				variant1.Fill(input);
 				variant2.Fill(input);
 				variant3.Fill(input);
-				anal = variant1.MidTable.ToString();
 				UpdateTextBoxes(variant1, variant2, variant3);
 				AlignCenterAll();
+				fill_anal(variant1,variant2,variant3);
 				//string outp = variant1.ToString() + "\n" + variant2.ToString() + "\n" + variant3.ToString();
 				//MessageBox.Show(outp);
 				//history now, those codes are -master yoda
@@ -529,14 +544,14 @@ namespace Abjad
 			{
 				analysis.Dispose();
 			}
-			if (anal == "")
+			if (anal1 == "")
 			{
 				MessageBox.Show("please start first!", "oops! something went wrong", MessageBoxButtons.OK,
 					MessageBoxIcon.Error);
 			}
 			else
 			{
-				analysis = new Analysis(anal);
+				analysis = new Analysis(anal1);
 				analysis.Show();
 			}
 

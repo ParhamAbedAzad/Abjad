@@ -91,6 +91,8 @@
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.panel5 = new System.Windows.Forms.Panel();
+			this.button6 = new System.Windows.Forms.Button();
+			this.button7 = new System.Windows.Forms.Button();
 			this.tabControl1.SuspendLayout();
 			this.tabPage3.SuspendLayout();
 			this.tabPage4.SuspendLayout();
@@ -167,6 +169,7 @@
 			this.tabPage3.Controls.Add(this.label2);
 			this.tabPage3.Controls.Add(this.label5);
 			this.tabPage3.Controls.Add(this.richTextBox13);
+			this.tabPage3.Controls.Add(this.button5);
 			this.tabPage3.Controls.Add(this.richTextBox9);
 			this.tabPage3.Controls.Add(this.richTextBox5);
 			this.tabPage3.Controls.Add(this.richTextBox12);
@@ -408,6 +411,7 @@
 			// tabPage4
 			// 
 			this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.tabPage4.Controls.Add(this.button6);
 			this.tabPage4.Controls.Add(this.label4);
 			this.tabPage4.Controls.Add(this.label6);
 			this.tabPage4.Controls.Add(this.label7);
@@ -646,6 +650,7 @@
 			// tabPage5
 			// 
 			this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.tabPage5.Controls.Add(this.button7);
 			this.tabPage5.Controls.Add(this.label8);
 			this.tabPage5.Controls.Add(this.label9);
 			this.tabPage5.Controls.Add(this.label10);
@@ -952,7 +957,6 @@
 			this.panel1.Controls.Add(this.button3);
 			this.panel1.Controls.Add(this.button1);
 			this.panel1.Controls.Add(this.button4);
-			this.panel1.Controls.Add(this.button5);
 			this.panel1.Controls.Add(this.button2);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -987,7 +991,7 @@
 			this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button5.Font = new System.Drawing.Font("Microsoft YaHei", 15F);
 			this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-			this.button5.Location = new System.Drawing.Point(302, 12);
+			this.button5.Location = new System.Drawing.Point(17, 19);
 			this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.button5.Name = "button5";
 			this.button5.Size = new System.Drawing.Size(136, 46);
@@ -1030,6 +1034,38 @@
 			this.panel5.Size = new System.Drawing.Size(27, 295);
 			this.panel5.TabIndex = 14;
 			this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+			// 
+			// button6
+			// 
+			this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.button6.FlatAppearance.BorderSize = 0;
+			this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button6.Font = new System.Drawing.Font("Microsoft YaHei", 15F);
+			this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+			this.button6.Location = new System.Drawing.Point(17, 19);
+			this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.button6.Name = "button6";
+			this.button6.Size = new System.Drawing.Size(136, 46);
+			this.button6.TabIndex = 29;
+			this.button6.Text = "Analysis";
+			this.button6.UseVisualStyleBackColor = false;
+			// 
+			// button7
+			// 
+			this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.button7.FlatAppearance.BorderSize = 0;
+			this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button7.Font = new System.Drawing.Font("Microsoft YaHei", 15F);
+			this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+			this.button7.Location = new System.Drawing.Point(17, 19);
+			this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.button7.Name = "button7";
+			this.button7.Size = new System.Drawing.Size(136, 46);
+			this.button7.TabIndex = 29;
+			this.button7.Text = "Analysis";
+			this.button7.UseVisualStyleBackColor = false;
 			// 
 			// AbjadMainForm
 			// 
@@ -1131,6 +1167,8 @@
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.Panel panel4;
 		private System.Windows.Forms.Button button5;
+		private System.Windows.Forms.Button button6;
+		private System.Windows.Forms.Button button7;
 	}
 }
 
