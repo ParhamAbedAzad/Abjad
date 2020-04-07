@@ -189,7 +189,7 @@ namespace Abjad
 		private void RichTextBox1_Enter(object sender, EventArgs e)
 		{
 			string text = richTextBox1.Text;
-			richTextBox1.ForeColor = Color.Black;
+			richTextBox1.ForeColor = Color.Orange;
 			if (text == PLACE_HOLDER)
 			{
 				richTextBox1.Text = "";
@@ -201,7 +201,7 @@ namespace Abjad
 			if (richTextBox1.Text == "")
 			{
 				richTextBox1.Text = PLACE_HOLDER;
-				richTextBox1.ForeColor = Color.LightGray;
+				richTextBox1.ForeColor = Color.DarkOrange;
 			}
 		}
 
