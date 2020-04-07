@@ -16,7 +16,8 @@ namespace Abjad
 		private bool dragging = false;
 		private Point dragCursorPoint;
 		private Point dragFormPoint;
-		Analysis analysis  = new Analysis();
+		private static String anal ="";
+		private Analysis analysis = new Analysis(anal);
 #if (DEBUG || Release)
 		Data data = new Data();
 		private const string PLACE_HOLDER = "enter text here...";
@@ -44,6 +45,7 @@ namespace Abjad
 				variant1.Fill(input);
 				variant2.Fill(input);
 				variant3.Fill(input);
+				anal = variant1.MidTable.ToString();
 				UpdateTextBoxes(variant1, variant2, variant3);
 				AlignCenterAll();
 				//string outp = variant1.ToString() + "\n" + variant2.ToString() + "\n" + variant3.ToString();
@@ -523,12 +525,21 @@ namespace Abjad
 
 		private void button5_Click(object sender, EventArgs e)
 		{
-			if (!analysis.IsDisposed) analysis.Show();
+			if (!analysis.IsDisposed)
+			{
+				analysis.Dispose();
+			}
+			if (anal == "")
+			{
+				MessageBox.Show("please start first!", "oops! something went wrong", MessageBoxButtons.OK,
+					MessageBoxIcon.Error);
+			}
 			else
 			{
-				analysis = new Analysis();
+				analysis = new Analysis(anal);
 				analysis.Show();
 			}
+
 		}
 
 		private void b5enter(object sender, EventArgs e)
