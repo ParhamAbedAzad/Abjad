@@ -62,7 +62,7 @@ namespace Abjad
 				variant3.Fill(input);
 				UpdateTextBoxes(variant1, variant2, variant3);
 				AlignCenterAll();
-				fill_anal(variant1,variant2,variant3);
+				//fill_anal(variant1,variant2,variant3);
 				//string outp = variant1.ToString() + "\n" + variant2.ToString() + "\n" + variant3.ToString();
 				//MessageBox.Show(outp);
 				//history now, those codes are -master yoda
@@ -206,7 +206,7 @@ namespace Abjad
 		private void RichTextBox1_Enter(object sender, EventArgs e)
 		{
 			string text = richTextBox1.Text;
-			richTextBox1.ForeColor = Color.Orange;
+			richTextBox1.ForeColor = Color.GhostWhite;
 			if (text == PLACE_HOLDER)
 			{
 				richTextBox1.Text = "";
@@ -218,7 +218,7 @@ namespace Abjad
 			if (richTextBox1.Text == "")
 			{
 				richTextBox1.Text = PLACE_HOLDER;
-				richTextBox1.ForeColor = Color.DarkOrange;
+				richTextBox1.ForeColor = Color.LightGray;
 			}
 		}
 
