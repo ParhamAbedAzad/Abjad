@@ -34,7 +34,7 @@ namespace Abjad
 			AlignCenterAll();
 		}
 
-		private void fill_anal(Variant1 variant1 , Variant2 variant2 , Variant3 variant3)
+		private void fill_anal(String temp)
 		{
 			//TODO sth
 			for (int i = 0; i < 500; i++)
@@ -44,7 +44,7 @@ namespace Abjad
 					anal1 += "  "  +  variant1.MidTable[j][i].ToString();
 				}
 
-				anal1 += '\n';
+				anal1 += Environment.NewLine;
 			}
 		}
 		private void button1_Click_1(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace Abjad
 				variant1.Fill(input);
 				variant2.Fill(input);
 				variant3.Fill(input);
-				UpdateTextBoxes(variant1, variant2, variant3);
+				UpdateTextBoxes();
 				AlignCenterAll();
 				fill_anal(variant1,variant2,variant3);
 				//string outp = variant1.ToString() + "\n" + variant2.ToString() + "\n" + variant3.ToString();
