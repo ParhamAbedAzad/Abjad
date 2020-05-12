@@ -13,17 +13,17 @@ namespace Abjad
 {
     public partial class Data : Form
     {
-        private const int LangNum = 25;
+        private const int LangNum = 27;
         public Data()
         {
             InitializeComponent();
 			char[] alpha =
 			{
-				'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'
+				'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','@','`'
 			};
-			char[] var1 = { 'a', 'z', 'b', 'y', 'c', 'x', 'd', 'w', 'e', 'v', 'f', 'u', 'g'};
-			char[] var2 = { 'a', 'u', 'b', 'v', 'h', 't', 'g', 's', 'i', 'm', 'j', 'n', 'p'};
-			char[] var3 = { 'a', 'x', 'b', 'w', 'e', 't', 'f', 's', 'i', 'p', 'j', 'o', 'm'};
+			char[] var1 = { 'a', 'e', 'i', 'm', 'q', 'u', 'y', 'b', 'f', 'j', 'n', 'r', 'v','z'};
+			char[] var2 = { 'a', 'u', 'b', 'v', 'h', 't', 'g', 's', 'i', 'm', 'j', 'n', 'p','z'};//dummy 
+			char[] var3 = { 'a', 'x', 'b', 'w', 'e', 't', 'f', 's', 'i', 'p', 'j', 'o', 'm','z'};//dummy
 
 			int j = 0;
 			for (int rowCount=0; rowCount < tableLayoutPanel4.RowCount; rowCount++)
@@ -96,5 +96,10 @@ namespace Abjad
             text.Text = MapTable.MapScore[current].ToString();
             return text;
         }
-    }
+
+		private void Data_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
