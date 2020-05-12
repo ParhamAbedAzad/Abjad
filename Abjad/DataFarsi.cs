@@ -2,6 +2,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using SortOrder = System.Data.SqlClient.SortOrder;
 
 namespace Abjad
 {
@@ -17,13 +18,12 @@ namespace Abjad
 				'ا', 'ب', 'پ', 'ت', 'ث', 'ج', 'چ', 'ح', 'خ', 'د', 'ذ', 'ر', 'ز', 'ژ', 'س', 'ش', 'ص', 'ض', 'ط', 'ظ',
 				'ع', 'غ', 'ف', 'ق', 'ک', 'گ', 'ل', 'م', 'ن', 'و', 'ه', 'ی'
 			};
-			char[] var1 = {'ا', 'گ', 'ب', 'ژ', 'ج', 'چ', 'د', 'پ', 'ه', 'غ', 'و', 'ظ', 'ز', 'ض', 'ح', 'ذ'};
-			char[] var2 = {'ا', 'پ', 'ب', 'چ', 'ح', 'غ', 'ز', 'ظ', 'ط', 'ش', 'ی', 'ت', 'ع', 'ز', 'س', 'ق'};
-			char[] var3 = {'ا', 'گ', 'ب', 'ژ', 'ه', 'غ', 'و', 'ظ', 'ط', 'خ', 'ی', 'ث', 'م', 'ر', 'ن', 'ق'};
-		Array.Reverse(var1);
-		Array.Reverse(var2);
-		Array.Reverse(var3);
+			char[] var1 = { 'ض', 'ت', 'ص', 'ن', 'ی', 'و', 'ب', 'ذ', 'ش', 'ف', 'م', 'ط', 'ه', 'ا'};
+			char[] var2 = {'ب', 'چ', 'ح', 'غ', 'ز', 'ظ', 'ط', 'ش', 'ی', 'ت', 'ع', 'ز', 'س', 'ق'};
+			char[] var3 = { 'ب', 'ژ', 'ه', 'غ', 'و', 'ظ', 'ط', 'خ', 'ی', 'ث', 'م', 'ر', 'ن', 'ق'};
+		
 
+		
 			int j = 0;
 			for (int rowCount = 0; rowCount < tableLayoutPanel4.RowCount; rowCount++)
 			{
@@ -46,6 +46,7 @@ namespace Abjad
 			Char current;
 			for (int colCount = 0; colCount < tableLayoutPanel1.ColumnCount; colCount++)
 			{
+				
 				tableLayoutPanel1.Controls.Add(newLable(var1[colCount]), colCount, 0);
 				tableLayoutPanel2.Controls.Add(newLable(var2[colCount]), colCount, 0);
 				tableLayoutPanel3.Controls.Add(newLable(var3[colCount]), colCount, 0);
@@ -94,6 +95,11 @@ namespace Abjad
 
 		private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
 		{
+		}
+
+		private void DataFarsi_Load(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
