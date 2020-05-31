@@ -25,12 +25,18 @@ namespace Abjad
 		private const string PLACE_HOLDER = "enter text here...";
 #elif (ReleaseFarsi)
 		private DataFarsi data = new DataFarsi();
+
 		private const string PLACE_HOLDER = "متن را اینجا وارد کنید ...";
 #endif
 
 		public AbjadMainForm()
 		{
 			InitializeComponent();
+#if (DEBUG || Release)
+			richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+#elif (ReleaseFarsi)
+			richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+#endif
 			AlignCenterAll();
 		}
 
